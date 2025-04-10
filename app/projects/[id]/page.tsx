@@ -93,15 +93,13 @@ Key Features:
     color: "bg-gray-800",
     category: "Mechanical Engineering Industry Experience",
     image: "/images/baker-hughes.png",
-    description: `During my internship at Baker Hughes, I focused on improving spectroscopy testing systems through mechanical design and optimization. The work involved precise optical alignments and innovative solutions for noise reduction.
+    description: `During my internship at Baker Hughes, I focused on improving spectroscopy testing systems through mechanical design and optimization. 
 
-Key Achievements:
-• Redesigned Herriott Cell for improved optical alignment and reduced testing noise
-• Optimized gas flow paths in the Flow Cell for enhanced measurement accuracy
-• Enhanced CO₂ Flow Cell assembly process and documentation
-• Created precise 3D printed prototypes with specific tolerance requirements
-• Developed comprehensive assembly procedures for team training`,
-    reportLink: "/reports/Baker.pdf"
+    Key Achievements:
+    • Led redesign of Herriott Cell for spectroscopy testing systems, improving optical alignment and reducing noise
+    • Optimized gas flow paths in Flow Cell assembly for enhanced measurement accuracy
+    • Created precise 3D printed prototypes with specific tolerance requirements
+    • Developed comprehensive assembly procedures and documentation for team training`,
   },
   {
     id: "caes",
@@ -110,15 +108,13 @@ Key Achievements:
     color: "bg-amber-600",
     category: "Mechanical Engineering Industry Experience",
     image: "/images/caes.png",
-    description: `At CAES Mission Systems, I contributed to RF wire bonding and SMT testing processes, focusing on precision engineering and quality assurance in electronics manufacturing.
-
-Key Achievements:
-• Programmed RF wire bonding patterns for electronic components
-• Designed and validated custom SMT testing fixtures
-• Created detailed technical documentation for manufacturing processes
-• Collaborated with quality control for testing procedure optimization
-• Implemented efficiency improvements in assembly workflows`,
-    reportLink: "/reports/CAES.pdf"
+    description: `At CAES Mission Systems, I worked on manufacturing engineering projects focused on RF components and testing systems.
+    
+    Key Achievements:
+    • Programmed RF wire bonding patterns for electronic components
+    • Designed and validated custom SMT testing fixtures
+    • Created detailed technical documentation for manufacturing processes
+    • Implemented efficiency improvements in assembly workflows`,
   },
   {
     id: "dda-sensor",
@@ -214,22 +210,12 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               {project.id === "baker-hughes" && (
                 <>
                   <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
-                  <PDFViewer
-                    title="Baker Hughes Internship Report"
-                    description="Detailed documentation of my internship experience at Baker Hughes, including projects, achievements, and technical contributions."
-                    pdfUrl={project.reportLink || ''}
-                  />
                 </>
               )}
 
               {project.id === "caes" && (
                 <>
                   <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
-                  <PDFViewer
-                    title="CAES Mission Systems Internship Report"
-                    description="Comprehensive report of my internship at CAES Mission Systems, covering wire bonding programs, fixturing projects, and process documentation."
-                    pdfUrl={project.reportLink || ''}
-                  />
                 </>
               )}
 

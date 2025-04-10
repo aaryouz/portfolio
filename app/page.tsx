@@ -1,6 +1,7 @@
 import { ProjectGrid } from "@/components/project-grid"
 import { SocialIcons } from "@/components/social-icons"
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -22,11 +23,23 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="container mx-auto px-6 py-8">
-        <div className="max-w-3xl mb-12">
-          <p className="text-gray-400 text-lg font-light tracking-wide">
-            Hi my name is Aaryan Sonawane. I believe in the power of modern technology and use it to maximise my full potential.
-          </p>
+      <div className="container mx-auto px-6 py-4">
+        <div className="flex flex-col md:flex-row items-start gap-8 mb-8">
+          <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-lg overflow-hidden shrink-0 bg-black">
+            <Image
+              src="/images/FLORA-Remove_Watermark-a8e8f707-removebg-preview.png"
+              alt="Aaryan Sonawane"
+              fill
+              className="object-cover"
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="max-w-3xl pt-2">
+            <p className="text-gray-400 text-lg font-light tracking-wide">
+              Hi my name is Aaryan Sonawane. I believe in the power of modern technology and use it to maximise my full potential.
+            </p>
+          </div>
         </div>
       </div>
 

@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Aaryan Sonawane} \\ \vspace{1pt}
+    \small
+    \faIcon{envelope} \href{mailto:aaryan@sonawane.com}{\underline{aaryan@sonawane.com}} $|$ 
+    \faIcon{phone} \href{tel:+9783996563}{\underline{978-399-6563}} $|$
+    \faIcon{github} \href{https://github.com/aaryouz}{\underline{github.com/aaryouz}} $|$
+    \faIcon{linkedin} \href{https://linkedin.com/in/aaryan-sonawane}{\underline{linkedin.com/in/aaryan-sonawane}}
+\end{center}
+
+%----------EDUCATION----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Rensselaer Polytechnic Institute}{Troy, NY}
+{Bachelor of Science in Aerospace Engineering}{Expected May 2025}
+\resumeItemListStart
+\resumeItem{GPA: 3.20/4.00}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------EXPERIENCE----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Baker Hughes}{Billerica, MA}
+{Mechanical Engineering Intern}{June 2024 -- August 2024}
+\resumeItemListStart
+\resumeItem{Led redesign of Herriott Cell for spectroscopy testing systems, improving optical alignment and reducing noise}
+\resumeItem{Optimized gas flow paths in Flow Cell assembly for enhanced measurement accuracy}
+\resumeItem{Created precise 3D printed prototypes with specific tolerance requirements}
+\resumeItem{Developed comprehensive assembly procedures and documentation for team training}
+\resumeItemListEnd
+
+\resumeSubheading
+{CAES Mission Systems}{MA}
+{Manufacturing Engineering Intern}{May 2023 -- August 2023}
+\resumeItemListStart
+\resumeItem{Programmed RF wire bonding patterns for electronic components}
+\resumeItem{Designed and validated custom SMT testing fixtures}
+\resumeItem{Created detailed technical documentation for manufacturing processes}
+\resumeItem{Implemented efficiency improvements in assembly workflows}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------PROJECTS----------
+\section{Engineering Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Europa Habitat and Composition Observation (ECHO) Lander} $|$ \emph{ADCS Lead}}{2024}
+\resumeItemListStart
+\resumeItem{Designed attitude control system for operation on Europa's icy surface with six-month mission duration}
+\resumeItem{Developed pyramid configuration of 4 reaction wheels ensuring three-axis control with redundancy}
+\resumeItem{Integrated dual star trackers, IMUs, and 3-axis magnetometer for robust attitude determination}
+\resumeItem{Optimized component selection within 25 kg ADCS mass budget}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{B2 Flying Wing Project} $|$ \emph{Lead Designer}}{2024}
+\resumeItemListStart
+\resumeItem{Designed and analyzed a B-2 Spirit-inspired flying wing using hybrid Dolphin Fin/Reflexed airfoil}
+\resumeItem{Achieved FEM safety factor of 7-8 and validated aerodynamics through CFD analysis}
+\resumeItem{Built lightweight model with I-beam spar using PLA 3D printing}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Deformation Displacement Array Sensor} $|$ \emph{Project Lead}}{2023}
+\resumeItemListStart
+\resumeItem{Created hardware/software pipeline using potentiometers and Arduino for structural deformation measurement}
+\resumeItem{Implemented MATLAB-based Finite Element Analysis for data validation}
+\resumeItem{Designed custom sensor array configuration for optimal coverage}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------EXTRACURRICULAR ACTIVITIES----------
+\section{Extracurricular Activities}
+Minor League Cricket -- New England Eagles, Certified Flight Training -- East Coast Aero Club, Lambda Chi Alpha Fraternity -- Social Media Chairman, Twitter -- Content Creator, RPI Blockchain Club -- Treasurer, RPI Futsal Club -- Captain
+
+\end{document}

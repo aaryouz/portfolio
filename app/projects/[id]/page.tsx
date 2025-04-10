@@ -9,7 +9,6 @@ interface Project {
   title: string;
   letter: string;
   color: string;
-  emoji: string;
   category: string;
   image: string;
   description: string;
@@ -24,180 +23,121 @@ const projects: Project[] = [
     title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
     letter: "E",
     color: "bg-blue-700",
-    emoji: "🛰️",
     category: "Aerospace & Space Systems Engineering",
     image: "/images/echo-adcs.png",
-    description: `Europa Habitat and Composition Observation (ECHO) Lander
+    description: `As ADCS Lead for the Europa Habitat and Composition Observation (ECHO) Lander Mission, I designed a comprehensive attitude control system for operation on Europa's icy surface. The mission demanded precise control and redundancy for a six-month science phase.
 
-Designed a full ADCS architecture for a lander mission to Europa, targeting autonomous operation through a six-month science phase on Europa's icy surface.
-
-- Developed and validated a pyramid configuration of 4 reaction wheels to ensure three-axis control with one-axis redundancy in case of failure.
-- Integrated 2 star trackers, 2 IMUs, and 1 3-axis magnetometer into the sensor suite.
-- Personally built a MATLAB-based star tracker pipeline capable of:
-  • Identifying stars in optical imagery using centroid extraction and SURF feature detection.
-  • Matching stars with a custom Hipparcos-based catalog (Vmag ≤ 5.5) using knnsearch.
-  • Computing attitude via Wahba's problem and quaternion estimation with confidence weighting.
-- Performed trade studies for component selection under a 25 kg ADCS mass budget
-- Validated FEA for structural interfaces and conducted risk assessments for high-radiation environments.`,
+Key Achievements:
+• Developed a pyramid configuration of 4 reaction wheels ensuring three-axis control with redundancy
+• Integrated dual star trackers, IMUs, and a 3-axis magnetometer for robust attitude determination
+• Optimized component selection within a 25 kg ADCS mass budget
+• Validated structural interfaces through FEA and assessed risks for high-radiation environments`,
     reportLink: "/reports/Team 1 FDR F24 Final Version (2).pdf",
     slidesLink: "/reports/Team 1 FDR Presentation.pdf",
   },
   {
-    id: "jupiter-uav",
-    title: "UAV Wing for Jupiter Flight",
-    letter: "J",
+    id: "b2-flying-wing",
+    title: "B2 Flying Wing Project",
+    letter: "B",
     color: "bg-gradient-to-br from-orange-500 via-red-500 to-purple-600",
-    emoji: "🛩️",
-    category: "Aerostructures & Planetary Flight Design",
+    category: "Aerostructures & CFD Analysis",
     image: "/images/jupiter-uav.png",
-    description: `I designed and analyzed a high-speed UAV capable of atmospheric flight 40 km above Jupiter's surface.
+    description: `We took on the challenge of designing and analyzing a flying wing aircraft, modeled after the Northrop Grumman B-2 Spirit stealth bomber. The goal: explore its low-drag potential and structural performance.
 
-  Encounter conditions:
-  • 10 kPa pressure
-  • 100 K temperature
-  • Mach 7.5 flight speed
-  • Headwinds up to 400 m/s
+Using a hybrid Dolphin Fin/Reflexed airfoil and PLA for 3D printing, we built a lightweight model with an I-beam spar to handle the load.
 
-  Material choice: Aluminum 6061-T6, chosen for high strength at cryogenic temperatures.
-
-  I performed FEA with curvature-based mesh refinement for maximum loads of 137 kN due to gusts and descent.
-
-  My stress pipeline included:
-  • Text-to-geometry generation for cross-section
-  • Calculation of Ixx, Iyy, Ixy for torsion and bending stress analysis
-  • Simulation of spar/boom elements and calculation of von Mises stress and safety factors
-  • Estimation of fatigue life and deflection under worst-case loading
-
-  I determined that drag was negligible (~5 kN), enabling energy-efficient descent, and concluded that 
-  sustained UAV cruise flight on Jupiter is plausible if deployment hurdles are met.`,
+Key Achievements:
+• Finite Element Analysis (FEM) showed a solid factor of safety (7-8)
+• Computational Fluid Dynamics (CFD) confirmed low drag (0.003 lbf)
+• Achieved modest lift (0.0073 lbf) at 25 fps
+• Successfully overcame 3D printing challenges with thin parts`,
+    reportLink: "/reports/B-2 Aerostructures Project.pdf"
   },
   {
     id: "apex-mobility",
     title: "Apex Mobility",
     letter: "A",
     color: "bg-emerald-600",
-    emoji: "🧠",
     category: "Personal Projects",
     image: "/images/apex-mobility.png",
-    description: `Apex Mobility is a personal project featuring dynamic mobility routines guided by an animated avatar.
+    description: `Developed a personalized daily training tracker for hybrid athletes, focusing on blending disciplines like martial arts, dance, yoga, sprinting, and gymnastics. The application emphasizes structured yet adaptable movement practice through customizable "Training Stones."
 
-  Key features:
-  • Implements a unique neuromuscular training technique called "controlled cramping", enhancing brain-to-muscle engagement
-  • Encourages active mobility over static stretching; draws from fascial tension theory (Chong Xie inspired)
-  • UI/UX inspired by the Bend App with improved personalization and clarity
-
-  Tools: Python, Animation Libraries
-  Planned: Web/Mobile App Integration`,
+Key Features:
+• Implemented intuitive daily movement logging interface with date-based organization
+• Created modular training categories for specific movement priorities
+• Built progress visualization tools for tracking consistency and habit formation
+• Integrated customizable workout templates for quick session setup
+• Developed a mobile-responsive design for on-the-go training tracking`
   },
   {
     id: "sprint-tester",
     title: "Marinovich Sprint Tester",
     letter: "M",
     color: "bg-purple-700",
-    emoji: "🏃",
     category: "Personal Projects",
     image: "/images/sprint-tester.png",
-    description: `The Marinovich Sprint Tester is a sprint mechanics visualizer and analyzer based on Marinovich methodology.
+    description: `Created a specialized sprint timing application based on the Marinovich methodology for sprint mechanics analysis. The tool focuses on precise timing and hands-free operation during training sessions.
 
-  Key features:
-  • Detects asymmetries and inefficiencies using high-frame-rate video input
-  • Analyzes running form and provides feedback for improvement
-  • Planned future integration: Plyometric feedback loop and "movement fingerprinting"`,
+Key Features:
+• Built high-precision timer with millisecond accuracy for short-distance sprints
+• Implemented automated 60-second recovery countdown for test protocols
+• Integrated voice command system for hands-free operation
+• Developed session logging system for progress tracking
+• Designed minimal, responsive UI optimized for field use`,
+    reportLink: "https://github.com/aaryouz/marinovich-sprint"
   },
   {
     id: "baker-hughes",
     title: "Baker Hughes Internship",
     letter: "B",
     color: "bg-gray-800",
-    emoji: "⚙️",
     category: "Mechanical Engineering Industry Experience",
     image: "/images/baker-hughes.png",
-    description: `As a Mechanical Design Intern at Baker Hughes (Panametrics Division), I led the redesign of the Herriott Cell 
-  and CO₂ flow cell assembly for spectroscopy testing systems.
+    description: `During my internship at Baker Hughes, I focused on improving spectroscopy testing systems through mechanical design and optimization. The work involved precise optical alignments and innovative solutions for noise reduction.
 
-  Key Projects:
-  
-  • Herriott Cell Design Update
-    - Updated 8 different parts in the Cell and added new triangular piece
-    - Converted glued optics into screw-mounted adjustable parts, improving alignment flexibility and assembly ease
-    - Made end cap rectangular for adjustability with a wrench
-    - Added threads in the middle hole for lens adjustability from back
-    - Designed triangular piece as an up/down rocking mechanism for the laser
-  
-  • Collimating Lens Assembly
-    - Designed 3 types of collimating lens assemblies including the original
-    - Created mounting solutions for TO66 laser with improved lens position adjustability
-    - Developed cylindrical mechanism with radio seal for laser and lens integration
-  
-  • Flow Cell Cover Assembly
-    - Designed covers to limit noise by sealing unused nozzle holes during testing
-    - Created 3D printed prototypes with precise tolerance levels
-    - Selected and ordered matching screws and hex pieces for proper fitting
-  
-  • A Divisor Python Implementation
-    - Recreated Excel code in Python for greater freedom in signal analysis
-    - Developed graphical comparison tools between Python and Excel outputs
-  
-  • Flow Cell Design Updates
-    - Shortened the length of the flow cell along with the window on top for BWT testing
-    - Placed orders for updated components
-  
-  Additional Experience:
-  - Learned manufacturing processes and transducer building/testing
-  - Studied flow velocity calculations and signal processing techniques
-  - Gained exposure to multiple departments and functions`,
+Key Achievements:
+• Redesigned Herriott Cell for improved optical alignment and reduced testing noise
+• Optimized gas flow paths in the Flow Cell for enhanced measurement accuracy
+• Enhanced CO₂ Flow Cell assembly process and documentation
+• Created precise 3D printed prototypes with specific tolerance requirements
+• Developed comprehensive assembly procedures for team training`,
+    reportLink: "/reports/Baker.pdf"
   },
   {
     id: "caes",
-    title: "CAES Mission Systems Internship",
+    title: "CAES Mission Systems",
     letter: "C",
-    color: "bg-red-600",
-    emoji: "🛠️",
+    color: "bg-amber-600",
     category: "Mechanical Engineering Industry Experience",
     image: "/images/caes.png",
-    description: `During my internship at CAES Mission Systems, I contributed to several projects:
+    description: `At CAES Mission Systems, I contributed to RF wire bonding and SMT testing processes, focusing on precision engineering and quality assurance in electronics manufacturing.
 
-  • Wire Bonding Programs
-    - Programmed 1 mil ball bonds for the entire LO1 assembly onto the Palomar 8000i Wire Bonder
-    - Developed detail-oriented approach to RF assembly drawings
-    - Learned proprietary programming techniques for precision bonding
-
-  • Fixturing
-    - Designed two unique fixtures to support AIM SMT Testing Procedures
-    - Applied Autodesk Inventor for 3D modeling and design
-    - Conducted tolerance stack-up analysis to ensure proper fit and function
-
-  • UID Label Creation
-    - Configured the Nordson Dage Stellar 4000 with desired output files
-    - Collaborated with Quality and Operations teams for feedback
-    - Ensured user-friendly outputs for operators
-    - Applied iterative learning to understand machine inputs
-
-  • Process Documentation
-    - Identified differences between company painting procedures and military standards
-    - Drafted procedures for incorporating stamps for Operators, Testers, and Inspectors`,
-    reportLink: "/reports/CAES.pdf",
+Key Achievements:
+• Programmed RF wire bonding patterns for electronic components
+• Designed and validated custom SMT testing fixtures
+• Created detailed technical documentation for manufacturing processes
+• Collaborated with quality control for testing procedure optimization
+• Implemented efficiency improvements in assembly workflows`,
+    reportLink: "/reports/CAES.pdf"
   },
   {
     id: "dda-sensor",
-    title: "Deformation Displacement Array (DDA) Sensor",
+    title: "Deformation Displacement Array Sensor",
     letter: "D",
     color: "bg-teal-600",
-    emoji: "🤖",
     category: "Sensor Systems & Real-Time Data",
     image: "/images/dda-sensor.png",
-    description: `As part of a two-person team, I co-led the development of a novel sensor platform—the Deformation-Displacement Array (DDA)—designed to digitally capture and analyze the surface geometry of deformable objects in real time. The original concept aimed to improve orthopedic solutions by enabling rapid, customized orthotic manufacturing using dynamic shape data.
+    description: `Developed an innovative sensor system for measuring structural deformation using a combination of hardware and software solutions. The project integrated multiple technologies for accurate displacement tracking.
 
-Early efforts focused on physical prototyping: I designed and assembled a 16-pin sensor array using compression springs, linear potentiometers, and an Arduino-based data logging system. However, due to resolution constraints and limitations in hardware scalability, I pivoted the project toward a software-first proof of concept, using high-fidelity simulations to showcase the system's potential.
-
-I developed an end-to-end simulation pipeline using MATLAB and Python to model displacement, force, pressure, stress, and strain profiles for various objects on a virtual DDA array. These tools enabled visual and analytical exploration of use cases across orthotics, soft robotics, and scientific instrumentation. I also integrated 3D scanned mesh data (via iPhone LiDAR) into our simulation environment and collaborated with VFX faculty to render detailed system visuals in Houdini.
-
-The final deliverable demonstrated the DDA sensor as a scalable, modular solution for dynamic surface mapping, with potential applications in prosthetics, wearable tech, and orthotic kiosks. We conducted external consultations with physicians from UPMC and discussed pathways toward FDA approval and eventual market deployment.
-
-This project sharpened my skills in hardware prototyping, simulation modeling, data visualization, interdisciplinary collaboration, and real-world validation of engineering concepts.`,
+Key Achievements:
+• Created a hardware/software pipeline using potentiometers and Arduino
+• Implemented MATLAB-based Finite Element Analysis for data validation
+• Designed custom sensor array configuration for optimal coverage
+• Built real-time data visualization and analysis tools
+• Validated system accuracy through comparative testing`,
     reportLink: "/reports/IS2 Final Design Report.pdf",
-    posterLink: "/reports/DDA_PosterSession_FinalCopy.pdf",
-  },
+    posterLink: "/reports/DDA_PosterSession_FinalCopy.pdf"
+  }
 ]
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
@@ -212,13 +152,31 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         </Link>
 
         <div className="max-w-3xl mx-auto">
+          {project.id === "dda-sensor" && (
+            <div className="mb-8 relative h-[700px] rounded-lg overflow-hidden bg-black/20">
+              <div className="absolute inset-0 flex flex-col">
+                <div className="p-8">
+                  <div className="text-sm text-zinc-400">{project.category}</div>
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-display tracking-tight">{project.title}</h1>
+                </div>
+                <div className="flex-1 relative p-12">
+                  <Image
+                    src="/images/Screenshot 2025-04-10 014211.png"
+                    alt="DDA Sensor Components Diagram"
+                    fill
+                    className="object-contain"
+                    sizes="100vw"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-3xl">{project.emoji}</span>
             <div className="text-white/70 font-light tracking-wide">{project.category}</div>
           </div>
           <h1 className="text-5xl md:text-7xl font-light tracking-tighter mb-8">{project.title}</h1>
 
-          {project.image && (
+          {project.image && project.id !== "dda-sensor" && (
             <div className="mb-8 relative h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden">
               <Image
                 src={project.image || "/placeholder.svg"}
@@ -277,7 +235,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
               {project.id === "dda-sensor" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <h3 className="text-xl font-medium mt-8 mb-4">Project Documentation</h3>
                   <div className="grid grid-cols-1 gap-4 mb-4">
                     <PDFViewer
                       title="Final Design Report"
@@ -293,7 +251,18 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 </>
               )}
 
-              {!["europa-lander", "baker-hughes", "caes", "dda-sensor"].includes(project.id) && (
+              {project.id === "b2-flying-wing" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="B2 Aerostructures Project Report"
+                    description="Comprehensive documentation of the B2 Flying Wing project, including design, analysis, and testing results."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing"].includes(project.id) && (
                 <p className="text-lg">
                   This is where you'll add your detailed project reports, images, PDFs, or any other content.
                 </p>

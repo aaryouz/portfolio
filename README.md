@@ -1,8 +1,6 @@
 # Aaryan's Portfolio 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
-
-A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my projects and professional journey as a Full Stack Developer.
+https://v0-portfolio-zeta-eight.vercel.app/
 
 ![Portfolio Preview](/public/images/FLORA-Remove_Watermark-a8e8f707-removebg-preview.png)
 

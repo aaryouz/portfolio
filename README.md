@@ -2,8 +2,6 @@
 
 https://v0-portfolio-zeta-eight.vercel.app/
 
-![Portfolio Preview](/public/images/FLORA-Remove_Watermark-a8e8f707-removebg-preview.png)
-
 ## Features
 
 - Modern UI with dark theme and purple accents

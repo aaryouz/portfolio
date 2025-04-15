@@ -1,78 +1,130 @@
-# Personal Portfolio Website 🚀
+# Aaryan's Portfolio 
 
-A modern, responsive portfolio website showcasing my skills, projects, and professional journey as a Full Stack Developer.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
 
-## 🛠️ Tech Stack
+A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my projects and professional journey as a Full Stack Developer.
 
-- **Frontend:**
-  - React.js
-  - Tailwind CSS
-  - Framer Motion (for animations)
+![Portfolio Preview](/public/images/FLORA-Remove_Watermark-a8e8f707-removebg-preview.png)
 
-- **Development Tools:**
-  - Vite (for fast development and building)
-  - Git (version control)
-  - npm (package management)
+## Features
 
-## ✨ Features
+- Modern UI with dark theme and purple accents
+- Fully responsive design
+- Accessible components using Radix UI
+- Optimized performance with Next.js
+- Integrated resume section
+- Social media integration
+- Dynamic project showcase
+- TypeScript for type safety
 
-- Responsive design that works on all devices
-- Modern UI/UX with smooth animations
-- Dark/Light theme support
-- Project showcase with live demos and GitHub links
-- Skills and technology expertise section
-- Contact form for professional inquiries
-- Blog section for sharing technical insights
+## Tech Stack
 
-## 🚀 Getting Started
+- **Framework:** Next.js 15.2.4
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Radix UI
+- **Forms:** React Hook Form + Zod
+- **Deployment:** Netlify
+- **Other Tools:**
+  - next-themes (theme management)
+  - tailwindcss-animate (animations)
+  - recharts (data visualization)
+  - date-fns (date formatting)
+
+## Getting Started
 
 ### Prerequisites
 
 - Node.js (v18 or higher)
-- npm (v8 or higher)
+- pnpm (recommended) or npm
 
 ### Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/aaryouz/portfolio.git
-```
-
-2. Navigate to the project directory:
-```bash
 cd portfolio
 ```
 
-3. Install dependencies:
+2. Install dependencies:
 ```bash
+pnpm install
+# or
 npm install
 ```
 
-4. Start the development server:
+3. Start the development server:
 ```bash
+pnpm dev
+# or
 npm run dev
 ```
 
-The site will be available at `http://localhost:5173`
+The site will be available at `http://localhost:3000`
 
-### Building for Production
-
-```bash
-npm run build
-```
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio/
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/         # Page components
-│   ├── assets/        # Images, fonts, etc.
-│   ├── styles/        # Global styles and Tailwind config
-│   └── utils/         # Utility functions
-├── public/            # Static files
-└── package.json       # Project dependencies and scripts
+├── app/                 # Next.js app directory (App Router)
+│   ├── page.tsx        # Home page
+│   └── projects/       # Dynamic project routes
+├── components/         # Reusable React components
+├── hooks/             # Custom React hooks
+├── lib/               # Utility functions
+├── public/            # Static assets
+│   ├── images/        # Image assets
+│   └── resume/        # Resume files
+├── styles/            # CSS and styling
+└── types/             # TypeScript definitions
 ```
 
+## Available Scripts
 
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+
+## Deployment
+
+This project is configured for deployment on Netlify. The `netlify.toml` file contains the necessary build configurations.
+
+### Automatic Deployments
+
+- Push to `main` branch triggers production deployment
+- Preview deployments are created for pull requests
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+# Add any required environment variables here
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Aaryan Sonawane**
+
+- Website: [your-website-url]
+- GitHub: [@aaryouz](https://github.com/aaryouz)
+- LinkedIn: [your-linkedin-profile]
+
+## Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Radix UI](https://www.radix-ui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)

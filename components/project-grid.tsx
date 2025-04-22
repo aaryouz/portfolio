@@ -4,6 +4,33 @@ import Image from "next/image"
 // Project data based on Aaryan's resume
 const projects = [
   {
+    id: "cfd-airfoil-study",
+    title: "Slat & Flap Airfoil Study",
+    letter: "S",
+    color: "bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900",
+    description: `Conducted an in-depth CFD analysis of a NACA 0015 airfoil with leading-edge slat and trailing-edge flap configurations. The study focused on evaluating aerodynamic performance and flow behavior at various angles of attack and velocities.
+
+Key Features:
+• Performed steady-state and transient simulations using Spalart-Allmaras turbulence model
+• Analyzed flow characteristics at 0° and 12° angles of attack
+• Evaluated performance at two velocities: 45 m/s and 90 m/s
+• Generated detailed pressure contours and velocity streamlines
+• Validated results against experimental data`,
+    category: "Aerodynamics & CFD Analysis",
+    image: "/images/cfd-airfoil-icon.png",
+    detailImage: "/images/cfd-airfoil-detail.png",
+    order: 8,
+    report: "/reports/CFD Project Report.pdf",
+    additionalReport: "/reports/CFD Project Report Pt. 2.pdf",
+    highlights: [
+      "Achieved lift coefficient (C_L) of 1.11 with optimized slat and flap configuration",
+      "Minimized drag coefficient to 0.11 through careful geometry refinement",
+      "Validated transient stability through HyperGraph analysis",
+      "Utilized high-fidelity mesh with 230,000 elements and wall-resolved layers",
+      "Demonstrated significant lift enhancement compared to baseline airfoil"
+    ]
+  },
+  {
     id: "europa-lander",
     title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
     letter: "E",

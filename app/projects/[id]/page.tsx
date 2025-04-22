@@ -11,10 +11,13 @@ interface Project {
   color: string;
   category: string;
   image: string;
+  detailImage?: string;
   description: string;
   reportLink?: string;
   slidesLink?: string;
   posterLink?: string;
+  additionalReport?: string;
+  highlights?: string[];
 }
 
 const projects: Project[] = [
@@ -133,6 +136,32 @@ Key Achievements:
 • Validated system accuracy through comparative testing`,
     reportLink: "/reports/IS2 Final Design Report.pdf",
     posterLink: "/reports/DDA_PosterSession_FinalCopy.pdf"
+  },
+  {
+    id: "cfd-airfoil-study",
+    title: "Slat & Flap Airfoil Study",
+    letter: "S",
+    color: "bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900",
+    description: `Conducted an in-depth CFD analysis of a NACA 0015 airfoil with leading-edge slat and trailing-edge flap configurations. The study focused on evaluating aerodynamic performance and flow behavior at various angles of attack and velocities.
+
+Key Features:
+• Performed steady-state and transient simulations using Spalart-Allmaras turbulence model
+• Analyzed flow characteristics at 0° and 12° angles of attack
+• Evaluated performance at two velocities: 45 m/s and 90 m/s
+• Generated detailed pressure contours and velocity streamlines
+• Validated results against experimental data`,
+    category: "Aerodynamics & CFD Analysis",
+    image: "/images/cfd-airfoil-icon.png",
+    detailImage: "/images/cfd-airfoil-detail.png",
+    reportLink: "/reports/CFD Project Report.pdf",
+    additionalReport: "/reports/CFD Project Report Pt. 2.pdf",
+    highlights: [
+      "Achieved lift coefficient (C_L) of 1.11 with optimized slat and flap configuration",
+      "Minimized drag coefficient to 0.11 through careful geometry refinement",
+      "Validated transient stability through HyperGraph analysis",
+      "Utilized high-fidelity mesh with 230,000 elements and wall-resolved layers",
+      "Demonstrated significant lift enhancement compared to baseline airfoil"
+    ]
   }
 ]
 
@@ -248,7 +277,47 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 </>
               )}
 
-              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing"].includes(project.id) && (
+              {project.id === "cfd-airfoil-study" && (
+                <>
+                  {project.detailImage && (
+                    <div className="mb-8 bg-black/20 rounded-lg overflow-hidden">
+                      <div className="relative h-[300px] md:h-[400px]">
+                        <Image
+                          src={project.detailImage}
+                          alt="CFD Analysis Visualization"
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+                      <div className="p-4 text-sm text-white/70">
+                        Pressure contours and streamlines visualization from CFD analysis
+                      </div>
+                    </div>
+                  )}
+                  <h3 className="text-xl font-medium mb-4">Key Results</h3>
+                  <ul className="list-disc list-inside mb-6 space-y-2">
+                    {project.highlights?.map((highlight, index) => (
+                      <li key={index} className="text-lg text-white/90">{highlight}</li>
+                    ))}
+                  </ul>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <div className="grid grid-cols-1 gap-4">
+                    <PDFViewer
+                      title="CFD Analysis Report"
+                      description="Comprehensive documentation of the airfoil study, including methodology, simulation setup, and results analysis."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                    <PDFViewer
+                      title="Part 2: Extended Analysis"
+                      description="Additional analysis of transient behavior and flow stability at different velocities."
+                      pdfUrl={project.additionalReport || ''}
+                    />
+                  </div>
+                </>
+              )}
+
+              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study"].includes(project.id) && (
                 <p className="text-lg">
                   This is where you'll add your detailed project reports, images, PDFs, or any other content.
                 </p>

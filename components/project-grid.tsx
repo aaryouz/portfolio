@@ -17,8 +17,8 @@ Key Features:
 • Generated detailed pressure contours and velocity streamlines
 • Validated results against experimental data`,
     category: "Aerodynamics & CFD Analysis",
-    image: "/images/cfd-airfoil-icon.png",
-    detailImage: "/images/cfd-airfoil-detail.png",
+    image: "/images/Cartoon B-2 Spirit Over Sunset Sky.png", // Block image
+    detailImage: "/images/Screenshot 2025-04-22 205057.png", // Detail page image
     order: 8,
     report: "/reports/CFD Project Report.pdf",
     additionalReport: "/reports/CFD Project Report Pt. 2.pdf",

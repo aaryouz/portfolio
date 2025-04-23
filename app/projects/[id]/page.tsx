@@ -278,44 +278,48 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               )}
 
               {project.id === "cfd-airfoil-study" && (
-                <>
-                  {project.detailImage && (
-                    <div className="mb-8 bg-black/20 rounded-lg overflow-hidden">
-                      <div className="relative h-[300px] md:h-[400px]">
-                        <Image
-                          src={project.detailImage}
-                          alt="CFD Analysis Visualization"
-                          fill
-                          className="object-contain"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                      </div>
-                      <div className="p-4 text-sm text-white/70">
-                        Pressure contours and streamlines visualization from CFD analysis
-                      </div>
-                    </div>
-                  )}
-                  <h3 className="text-xl font-medium mb-4">Key Results</h3>
-                  <ul className="list-disc list-inside mb-6 space-y-2">
-                    {project.highlights?.map((highlight, index) => (
-                      <li key={index} className="text-lg text-white/90">{highlight}</li>
-                    ))}
-                  </ul>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <div className="grid grid-cols-1 gap-4">
-                    <PDFViewer
-                      title="CFD Analysis Report"
-                      description="Comprehensive documentation of the airfoil study, including methodology, simulation setup, and results analysis."
-                      pdfUrl={project.reportLink || ''}
-                    />
-                    <PDFViewer
-                      title="Part 2: Extended Analysis"
-                      description="Additional analysis of transient behavior and flow stability at different velocities."
-                      pdfUrl={project.additionalReport || ''}
-                    />
-                  </div>
-                </>
-              )}
+  <>
+    {project.detailImage && (
+      <div className="mb-8">
+        <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden bg-black/20">
+          <Image
+            src={project.detailImage}
+            alt="CFD Analysis Visualization"
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+        <div className="p-4 text-sm text-white/70">
+          Pressure contours and streamlines visualization from CFD analysis
+        </div>
+      </div>
+    )}
+    <div className="mb-8">
+      <h3 className="text-xl font-medium mb-4">Key Results</h3>
+      <ul className="list-disc list-inside space-y-2">
+        {project.highlights?.map((highlight, index) => (
+          <li key={index} className="text-lg text-white/90">{highlight}</li>
+        ))}
+      </ul>
+    </div>
+    <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg border border-white/10">
+      <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+      <div className="grid grid-cols-1 gap-4">
+        <PDFViewer
+          title="CFD Analysis Report"
+          description="Comprehensive documentation of the airfoil study, including methodology, simulation setup, and results analysis."
+          pdfUrl={project.reportLink || ''}
+        />
+        <PDFViewer
+          title="Part 2: Extended Analysis"
+          description="Additional analysis of transient behavior and flow stability at different velocities."
+          pdfUrl={project.additionalReport || ''}
+        />
+      </div>
+    </div>
+  </>
+)}
 
               {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study"].includes(project.id) && (
                 <p className="text-lg">

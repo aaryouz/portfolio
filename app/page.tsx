@@ -9,7 +9,7 @@ export default function Home() {
       <header className="p-6 flex items-center">
         <div className="flex items-center gap-3">
           <div className="w-4 h-4 rounded-full bg-purple-500"></div>
-          <h1 className="text-2xl md:text-4xl font-light tracking-tight">Aaryan's corner of the internet</h1>
+          <h1 className="text-2xl md:text-4xl font-light tracking-tight">Aaryan's Portfolio</h1>
         </div>
         <div className="ml-auto flex items-center gap-6">
           <Link 

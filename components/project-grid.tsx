@@ -4,33 +4,6 @@ import Image from "next/image"
 // Project data based on Aaryan's resume
 const projects = [
   {
-    id: "cfd-airfoil-study",
-    title: "Slat & Flap Airfoil Study",
-    letter: "S",
-    color: "bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900",
-    description: `Conducted an in-depth CFD analysis of a NACA 0015 airfoil with leading-edge slat and trailing-edge flap configurations. The study focused on evaluating aerodynamic performance and flow behavior at various angles of attack and velocities.
-
-Key Features:
-• Performed steady-state and transient simulations using Spalart-Allmaras turbulence model
-• Analyzed flow characteristics at 0° and 12° angles of attack
-• Evaluated performance at two velocities: 45 m/s and 90 m/s
-• Generated detailed pressure contours and velocity streamlines
-• Validated results against experimental data`,
-    category: "Aerodynamics & CFD Analysis",
-    image: "/images/Cartoon B-2 Spirit Over Sunset Sky.png", // Block image
-    detailImage: "/images/Screenshot 2025-04-22 205057.png", // Detail page image
-    order: 8,
-    report: "/reports/CFD Project Report.pdf",
-    additionalReport: "/reports/CFD Project Report Pt. 2.pdf",
-    highlights: [
-      "Achieved lift coefficient (C_L) of 1.11 with optimized slat and flap configuration",
-      "Minimized drag coefficient to 0.11 through careful geometry refinement",
-      "Validated transient stability through HyperGraph analysis",
-      "Utilized high-fidelity mesh with 230,000 elements and wall-resolved layers",
-      "Demonstrated significant lift enhancement compared to baseline airfoil"
-    ]
-  },
-  {
     id: "europa-lander",
     title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
     letter: "E",
@@ -52,26 +25,7 @@ Key Features:
     order: 3, // B
     report: "/reports/B2 Aerostructures Project.pdf"
   },
-  {
-    id: "apex-mobility",
-    title: "Apex Mobility",
-    letter: "A",
-    color: "bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900",
-    description: "Dynamic mobility routines guided by an animated avatar with neuromuscular training techniques.",
-    category: "Personal Projects",
-    image: "/images/apex-mobility.png",
-    order: 6, // C
-  },
-  {
-    id: "sprint-tester",
-    title: "Marinovich Sprint Tester",
-    letter: "M",
-    color: "bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900",
-    description: "Sprint mechanics visualizer and analyzer based on Marinovich methodology.",
-    category: "Personal Projects",
-    image: "/images/sprint-tester.png",
-    order: 7, // D
-  },
+
   {
     id: "baker-hughes",
     title: "Baker Hughes Internship",

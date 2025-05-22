@@ -96,13 +96,13 @@ Key Features:
     color: "bg-gray-800",
     category: "Mechanical Engineering Industry Experience",
     image: "/images/baker-hughes.png",
-    description: `During my internship at Baker Hughes, I focused on improving spectroscopy testing systems through mechanical design and optimization. 
+    description: `Mechanical Engineering Internship at Baker Hughes, focusing on product development and manufacturing process improvement.
 
-    Key Achievements:
-    • Led redesign of Herriott Cell for spectroscopy testing systems, improving optical alignment and reducing noise
-    • Optimized gas flow paths in Flow Cell assembly for enhanced measurement accuracy
-    • Created precise 3D printed prototypes with specific tolerance requirements
-    • Developed comprehensive assembly procedures and documentation for team training`,
+Key Achievements:
+    • Designed and validated custom SMT testing fixtures
+    • Created detailed technical documentation for manufacturing processes
+    • Implemented efficiency improvements in assembly workflows`,
+    reportLink: "/reports/Baker.pdf",
   },
   {
     id: "caes",
@@ -111,13 +111,13 @@ Key Features:
     color: "bg-amber-600",
     category: "Mechanical Engineering Industry Experience",
     image: "/images/caes.png",
-    description: `At CAES Mission Systems, I worked on manufacturing engineering projects focused on RF components and testing systems.
-    
-    Key Achievements:
-    • Programmed RF wire bonding patterns for electronic components
-    • Designed and validated custom SMT testing fixtures
-    • Created detailed technical documentation for manufacturing processes
-    • Implemented efficiency improvements in assembly workflows`,
+    description: `Engineering Internship at Collins Aerospace (CAES), working on aerospace component design and testing.
+
+Key Achievements:
+    • Conducted structural analysis using FEA tools
+    • Developed test procedures for component validation
+    • Collaborated on design reviews and documentation`,
+    reportLink: "/reports/CAES.pdf",
   },
   {
     id: "dda-sensor",
@@ -239,12 +239,22 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               {project.id === "baker-hughes" && (
                 <>
                   <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
+                  <PDFViewer
+                    title="Baker Hughes Internship Report"
+                    description="Detailed documentation of my internship experience at Baker Hughes, including projects and achievements."
+                    pdfUrl={project.reportLink || ''}
+                  />
                 </>
               )}
 
               {project.id === "caes" && (
                 <>
                   <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
+                  <PDFViewer
+                    title="Collins Aerospace Internship Report"
+                    description="Comprehensive documentation of my internship experience at Collins Aerospace, including project work and technical contributions."
+                    pdfUrl={project.reportLink || ''}
+                  />
                 </>
               )}
 

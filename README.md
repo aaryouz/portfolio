@@ -1,6 +1,6 @@
 # Aaryan's Portfolio 
 
-https://v0-portfolio-zeta-eight.vercel.app/
+www.youzysworld.com/
 
 ## Features
 

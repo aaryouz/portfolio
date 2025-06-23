@@ -25,10 +25,10 @@ const projects: Project[] = [
     id: "europa-lander",
     title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
     letter: "E",
-    color: "bg-blue-700",
+    color: "bg-gray-800",
     category: "Aerospace & Space Systems Engineering",
     image: "/images/echo-adcs.png",
-    description: `As ADCS Lead for the Europa Habitat and Composition Observation (ECHO) Lander Mission, I designed a comprehensive attitude control system for operation on Europa's icy surface. The mission demanded precise control and redundancy for a six-month science phase.
+    description: `As ADCS Lead for the ECHO Lander Mission, I designed a comprehensive attitude control system for operation on Europa's icy surface. The mission demanded precise control and redundancy for a six-month science phase.
 
 Key Achievements:
 • Developed a pyramid configuration of 4 reaction wheels ensuring three-axis control with redundancy
@@ -42,18 +42,18 @@ Key Achievements:
     id: "b2-flying-wing",
     title: "B2 Flying Wing Project",
     letter: "B",
-    color: "bg-gradient-to-br from-orange-500 via-red-500 to-purple-600",
+    color: "bg-gray-800",
     category: "Aerostructures & CFD Analysis",
-    image: "/images/jupiter-uav.png",
-    description: `We took on the challenge of designing and analyzing a flying wing aircraft, modeled after the Northrop Grumman B-2 Spirit stealth bomber. The goal: explore its low-drag potential and structural performance.
+    image: "/images/b2-wing-3d-model.png",
+    description: `We took on the challenge of designing and analyzing a flying wing aircraft, modeled after the Northrop Grumman B-2 Spirit stealth bomber. The goal was to explore its low-drag potential and structural performance.
 
 Using a hybrid Dolphin Fin/Reflexed airfoil and PLA for 3D printing, we built a lightweight model with an I-beam spar to handle the load.
 
 Key Achievements:
-• Finite Element Analysis (FEM) showed a solid factor of safety (7-8)
-• Computational Fluid Dynamics (CFD) confirmed low drag (0.003 lbf)
+• FEM analysis showed a solid factor of safety (7-8)
+• CFD analysis confirmed low drag (0.003 lbf)
 • Achieved modest lift (0.0073 lbf) at 25 fps
-• Successfully overcame 3D printing challenges with thin parts`,
+`,
     reportLink: "/reports/B-2 Aerostructures Project.pdf"
   },
   {
@@ -95,7 +95,7 @@ Key Features:
     letter: "B",
     color: "bg-gray-800",
     category: "Mechanical Engineering Industry Experience",
-    image: "/images/baker-hughes.png",
+    image: "/images/baker-hughes-cad-model.png",
     description: `Mechanical Engineering Internship at Baker Hughes, focusing on product development and manufacturing process improvement.
 
 Key Achievements:
@@ -110,8 +110,8 @@ Key Achievements:
     letter: "C",
     color: "bg-amber-600",
     category: "Mechanical Engineering Industry Experience",
-    image: "/images/caes.png",
-    description: `Engineering Internship at Collins Aerospace (CAES), working on aerospace component design and testing.
+    image: "/images/caes-lab-workspace.png",
+    description: `Engineering Internship at Cobham Aerospace Electronics Solutions (CAES), working on electronic component design and testing.
 
 Key Achievements:
     • Conducted structural analysis using FEA tools
@@ -121,7 +121,7 @@ Key Achievements:
   },
   {
     id: "dda-sensor",
-    title: "Deformation Displacement Array Sensor",
+    title: "Deformation Displacement Array (DDA) Sensor",
     letter: "D",
     color: "bg-teal-600",
     category: "Sensor Systems & Real-Time Data",
@@ -186,8 +186,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 </div>
                 <div className="flex-1 relative p-12">
                   <Image
-                    src="/images/Screenshot 2025-04-10 014211.png"
-                    alt="DDA Sensor Components Diagram"
+                    src="/images/Screenshot 2025-04-22 205057.png"
+                    alt="DDA Sensor Research Poster"
                     fill
                     className="object-contain"
                     sizes="100vw"
@@ -251,8 +251,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 <>
                   <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
                   <PDFViewer
-                    title="Collins Aerospace Internship Report"
-                    description="Comprehensive documentation of my internship experience at Collins Aerospace, including project work and technical contributions."
+                    title="CAES Internship Report"
+                    description="Comprehensive documentation of my internship experience at CAES, including project work and technical contributions."
                     pdfUrl={project.reportLink || ''}
                   />
                 </>
@@ -266,11 +266,6 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       title="Final Design Report"
                       description="Comprehensive documentation of the DDA Sensor project, including system architecture, prototyping process, and simulation results."
                       pdfUrl={project.reportLink || ''}
-                    />
-                    <PDFViewer
-                      title="Research Poster"
-                      description="Academic poster presentation highlighting key innovations and findings from the DDA Sensor project."
-                      pdfUrl={project.posterLink || ''}
                     />
                   </div>
                 </>

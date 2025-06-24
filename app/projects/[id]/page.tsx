@@ -26,7 +26,7 @@ const projects: Project[] = [
     title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
     letter: "E",
     color: "bg-gray-800",
-    category: "Aerospace & Space Systems Engineering",
+    category: "Space Systems Engineering",
     image: "/images/echo-adcs.png",
     description: `As ADCS Lead for the ECHO Lander Mission, I designed a comprehensive attitude control system for operation on Europa's icy surface. The mission demanded precise control and redundancy for a six-month science phase.
 
@@ -43,7 +43,7 @@ Key Achievements:
     title: "B2 Flying Wing Project",
     letter: "B",
     color: "bg-gray-800",
-    category: "Aerostructures & CFD Analysis",
+    category: "Aerostructures Analysis",
     image: "/images/b2-wing-3d-model.png",
     description: `We took on the challenge of designing and analyzing a flying wing aircraft, modeled after the Northrop Grumman B-2 Spirit stealth bomber. The goal was to explore its low-drag potential and structural performance.
 
@@ -94,14 +94,14 @@ Key Features:
     title: "Baker Hughes Internship",
     letter: "B",
     color: "bg-gray-800",
-    category: "Mechanical Engineering Industry Experience",
+    category: "Engineering Industry Experience",
     image: "/images/baker-hughes-cad-model.png",
     description: `Mechanical Engineering Internship at Baker Hughes, focusing on product development and manufacturing process improvement.
 
 Key Achievements:
-    • Designed and validated custom SMT testing fixtures
-    • Created detailed technical documentation for manufacturing processes
-    • Implemented efficiency improvements in assembly workflows`,
+    • Spearheaded the design and modeling of over 40 mechanical parts, including custom noise-reduction fixtures for fluid testing, using SolidWorks and GD&T. Delivered prototypes with exacting tolerances, ensuring the highest levels of precision. 
+    • Leveraged advanced data tools like LabVIEW and Python to optimize the performance of Piezoelectric Crystals and flow cells.
+    • Implemented Python-based algorithms to improve signal processing efficiency, enabling simultaneous analysis of multiple signals`,
     reportLink: "/reports/Baker.pdf",
   },
   {
@@ -109,14 +109,14 @@ Key Achievements:
     title: "CAES Mission Systems",
     letter: "C",
     color: "bg-amber-600",
-    category: "Mechanical Engineering Industry Experience",
+    category: "Engineering Industry Experience",
     image: "/images/caes-lab-workspace.png",
     description: `Engineering Internship at Cobham Aerospace Electronics Solutions (CAES), working on electronic component design and testing.
 
 Key Achievements:
-    • Conducted structural analysis using FEA tools
-    • Developed test procedures for component validation
-    • Collaborated on design reviews and documentation`,
+    • Directed a cross-functional team of 8 engineers, optimizing manufacturing processes and commissioning the Nordson Dage 4000plus Bond Pull Tester, reducing setup time by 30%  
+    • Developed Python-based automation tools to improve data analysis for die shear tests, contributing to improved sensor and actuator integration, crucial for aerospace assemblies. 
+    • Led the creation of machine-readable formats for RF assemblies, ensuring compliance with aerospace-grade documentation and manufacturing standards, significantly improving part traceability and operational efficiency.`,
     reportLink: "/reports/CAES.pdf",
   },
   {
@@ -124,7 +124,7 @@ Key Achievements:
     title: "Deformation Displacement Array (DDA) Sensor",
     letter: "D",
     color: "bg-teal-600",
-    category: "Sensor Systems & Real-Time Data",
+    category: "Hardware Engineering",
     image: "/images/dda-sensor.png",
     description: `Developed an innovative sensor system for measuring structural deformation using a combination of hardware and software solutions. The project integrated multiple technologies for accurate displacement tracking.
 
@@ -162,6 +162,141 @@ Key Features:
       "Utilized high-fidelity mesh with 230,000 elements and wall-resolved layers",
       "Demonstrated significant lift enhancement compared to baseline airfoil"
     ]
+  },
+  {
+    id: "sfm-project",
+    title: "Influence of Solar Accelaration on the Earth Moon CR3BP",
+    letter: "S",
+    color: "bg-gray-800",
+    category: "Orbital Mechanics",
+    image: "/images/SFM-diagram.png",
+    description: `This project explores how solar gravitational perturbations impact periodic satellite orbits around Earth-Moon Lagrange points. Using initial conditions from NASA's JPL SSD database, I simulated orbit propagation in a Circular Restricted 3 Body Problem (CR3BP) framework and extended it into a CR4BP model by introducing solar perturbations. The goal was to visualize how stable and unstable halo, butterfly, and vertical orbits respond to solar influence over multiple orbital periods.
+
+Key Achievements:
+• Simulated Earth-Moon Lagrange point orbits using CR3BP and validated them against NASA's JPL data
+• Developed MATLAB scripts to integrate differential equations of motion via ode45, with and without solar perturbation
+• Transitioned from 3-body to 4-body modeling by introducing the Sun as a dynamic force source, calculating real-time solar acceleration using trigonometric orbital positioning
+• Analyzed the orbit deformation after one and fifty orbital periods to study long-term perturbative effects
+• Demonstrated how certain orbits (e.g., Northern Halo around L1) degrade over time under solar influence despite initial high stability`,
+    reportLink: "/reports/SFM Project.pdf",
+  },
+  {
+    id: "stingray-uav",
+    title: "Aerodynamic Analysis of Stingray UAV with Flap Deflection",
+    letter: "A",
+    color: "bg-gray-800",
+    category: "Wind Tunnel Testing",
+    image: "/images/Stingray_UAV-diagram.png",
+    description: `This experiment explored the aerodynamic effects of flap deflection on a blended wing-body Stingray UAV using wind tunnel testing and flow visualization at Rensselaer Polytechnic Institute. Two configurations were tested—baseline (0° flaps) and 25° downward flaps—at a Reynolds number of ~152,823. Forces and moments were captured using a 6-component sting balance and post-processed to obtain lift, drag, and pitching moment coefficients across a range of angles of attack.
+
+Key Achievements:
+• Conducted force balance testing to compute lift, drag, and pitching moment coefficients for baseline and flapped wing configurations
+• Verified that flap deflection shifted the zero-lift angle from -2° to -4° and increased max lift coefficient from 0.75 to 0.85 without causing stall up to 14° AOA
+• Demonstrated extremely low drag coefficients and no stall behavior across both configurations, validating the aerodynamic efficiency of the Stingray UAV's blended wing-body design
+• Used helium bubble flow visualization to confirm flow attachment and minimal separation across all angles of attack—even with flaps deployed
+• Achieved strong agreement between experimental trends and published results on similar UAV models from literature, reinforcing the validity of results`,
+    reportLink: "/reports/Stingray_UAV.pdf",
+  },
+  {
+    id: "cfd-analysis",
+    title: "CFD Analysis of NACA 0015 Airfoil with High-Lift Devices",
+    letter: "C",
+    color: "bg-gray-800",
+    category: "CFD Analysis",
+    image: "/images/CFD-diagram.png",
+    description: `This project investigated the aerodynamic effects of slats and flaps on a NACA 0015 airfoil under steady and transient flow conditions. Using CFD simulations in HyperMesh and AcuSolve, we evaluated how high-lift devices perform at 12° angle of attack for both low (45 m/s) and high (90 m/s) freestream velocities.
+
+The study was split into two parts:
+• Steady-state simulations measured lift and drag on the airfoil with a slat, flap, and their combination
+• Transient zoom analysis focused on the unsteady flow behavior in the critical region between the slat and the main airfoil
+
+This allowed us to capture not just the aerodynamic performance but also the stability characteristics of high-lift devices during takeoff and landing scenarios.
+
+Key Achievements:
+• Simulated lift and drag characteristics of slat and flap configurations at Reynolds numbers of 7.8×10⁵ and 1.57×10⁶
+• Achieved a 2x increase in lift using slat + flap configuration compared to baseline (CL = 1.11 vs. 0.681)
+• Demonstrated that flaps significantly reduce the zero-lift angle and enhance aerodynamic efficiency at higher AoA
+• Performed detailed transient simulations of slat-only configuration showing stable attached flow at 12° AoA, but large vortex shedding and instability at 0° AoA
+• Used HyperGraph to quantify oscillations in lift force over time, confirming that slats improve aerodynamic stability at higher AoA but may reduce stability during level flight
+• Created refined meshing techniques in critical regions for transient simulation, balancing resolution with hardware limitations`,
+    reportLink: "/reports/CFD.pdf",
+  },
+  {
+    id: "uni3dad",
+    title: "Uni-3DAD: Unified 3D Anomaly Detection Using GAN Inversion",
+    letter: "U",
+    color: "bg-gray-800",
+    category: "3D Computer Vision",
+    image: "/images/Uni3DAD-diagram.png",
+    description: `Uni-3DAD is a unified framework for unsupervised 3D anomaly detection on point cloud data using GAN inversion. Traditional 3D anomaly detection pipelines either rely on autoencoders or separate steps for reconstruction and discrimination. Our method simplifies this by using a single GAN model capable of both tasks, trained end-to-end on normal data.
+
+By inverting the input point cloud through a pre-trained generator, we identify anomalies as points that fail to reconstruct properly. This framework generalizes across multiple object categories, making it scalable and adaptable to real-world tasks like industrial defect detection or robotics vision.
+
+Key Achievements:
+• Developed an end-to-end pipeline for 3D anomaly detection that eliminates the need for separate discriminator or encoder networks
+• Leveraged GAN inversion to achieve robust reconstructions of normal objects, enabling precise localization of outliers in corrupted shapes
+• Demonstrated superior performance on benchmark datasets like ShapeNet and MVTec3D, outperforming traditional autoencoder-based baselines
+• Incorporated PointNet++ and DGCNN architectures to evaluate the generalizability of point cloud encoders
+• Enabled category-level transfer learning, showing the model's ability to detect anomalies in unseen object categories without retraining`,
+    reportLink: "/reports/Uni3DAD.pdf",
+  },
+  {
+    id: "ekf-lunar-tracking",
+    title: "EKF-Based Trans-Lunar Coast Tracking",
+    letter: "E",
+    color: "bg-gray-800",
+    category: "Space Navigation",
+    image: "/images/moon-diagram.png",
+    description: `This project involved building an Extended Kalman Filter (EKF) to track a spacecraft's trajectory during its trans-lunar coast using measurements from NASA's Goldstone Deep Space Network. Using noisy range, range-rate, and bearing (R3B) data from the ground station, the filter estimates the spacecraft's position and velocity in the ECI frame.
+
+The EKF fuses a nonlinear dynamic model based on two-body orbital mechanics with real-world measurement updates from a rotating Earth-based antenna, incorporating Earth-centered inertial (ECI), Earth-fixed (ECEF), and East-North-Up (ENU) coordinate transformations.
+
+Key Achievements:
+• Designed and implemented a discrete-time EKF using a nonlinear two-body dynamics model with Gaussian white noise acceleration
+• Derived and implemented Jacobians for dynamic propagation and R3B measurement models to form EKF's sensitivity matrix
+• Built accurate transformation pipelines between ECI, ECEF, and ENU frames for proper handling of Goldstone antenna motion and orientation
+• Achieved consistent estimation within ±3σ bounds across all position and velocity components, validating filter tuning and observability assumptions
+• Created a full simulation pipeline in Python using real tracking data to estimate 6D spacecraft state and generate diagnostic plots`,
+    reportLink: "/reports/moon.pdf",
+  },
+  {
+    id: "horizon-opnav",
+    title: "Horizon-Based OpNav with LORRI Imagery",
+    letter: "H",
+    color: "bg-gray-800",
+    category: "Optical Navigation",
+    image: "/images/pluto-diagram.png",
+    description: `This project implemented horizon-based optical navigation (OpNav) using real flight imagery from the New Horizons spacecraft during its flyby of Pluto. Using a single LORRI image, I performed camera calibration and estimated the spacecraft's relative position with respect to Pluto based solely on visual geometry.
+
+Pluto was modeled as a sphere, and the spacecraft position in the camera frame was inferred by fitting a circle to Pluto's limb using the Circle Hough Transform. This method uses the geometry of the image and the known camera intrinsics to reverse-project 2D limb information into a full 3D position estimate.
+
+Key Achievements:
+• Estimated the intrinsic calibration matrix for the LORRI camera using known specs (focal length and pixel pitch) to compute focal length in pixels
+• Developed a Python pipeline using OpenCV to preprocess the image, detect Pluto's limb, and fit a circular model to the planet's horizon
+• Applied similar-triangle geometry to back-calculate the Z-distance from the pixel radius of Pluto's limb and computed x, y offsets to localize the camera-frame position
+• Achieved spacecraft position estimate relative to Pluto as: x = 45.70 km, y = -291.80 km, Z = 1,422,498.41 km
+• Validated performance using visual overlays and sensitivity to pixel radius accuracy`,
+    reportLink: "/reports/pluto.pdf",
+  },
+  {
+    id: "flutter-control",
+    title: "Active Flutter Control in Aeroelastic Wing Section",
+    letter: "A",
+    color: "bg-gray-800",
+    category: "Aeroelastic Control",
+    image: "/images/flutter-diagram.png",
+    description: `This project involved modeling and controlling flutter instability in an aircraft wing section using a two-degree-of-freedom Lagrangian formulation. The system dynamics were captured as a state-space aeroelastic model with coupled plunge and pitch motion, incorporating structural spring-mass-damper dynamics and unsteady aerodynamic forces via the Theodorsen function.
+
+A proportional-integral (PI) compensator was designed to suppress flutter oscillations by commanding aileron deflections in a closed-loop feedback configuration. The project focused on meeting stability margins, minimizing response times, and ensuring actuator feasibility, with emphasis on robustness and feasibility of implementation.
+
+Key Achievements:
+• Developed a state-space model of aeroelastic wing behavior using energy-based Lagrangian methods and unsteady aerodynamic theory
+• Derived system transfer functions and designed a PI controller: C(s) = 10 + 100/s, with extended versions including shaping filters and compensator dynamics
+• Conducted frequency-domain analysis achieving >45° phase margin and >12dB gain margin ensuring robust closed-loop stability
+• Settling time for pitch disturbances reached within 0.5 seconds, meeting dynamic requirements
+• Verified feasibility by analyzing actuator signal characteristics: Peak aileron deflection = 0.8 rad, Peak rate = 52 rad/s, Control bandwidth ≈ 15 Hz
+• Performed root locus, Bode, and step response simulations to validate compensator performance and system response under saturation constraints`,
+    reportLink: "/reports/flutter.pdf",
   }
 ]
 
@@ -326,7 +461,84 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   </>
 )}
 
-              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study"].includes(project.id) && (
+              {project.id === "sfm-project" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="SFM Project Report"
+                    description="Comprehensive documentation of the SFM project, including CR3BP and CR4BP modeling, MATLAB implementation, and orbital analysis results."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {project.id === "stingray-uav" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="Stingray UAV Aerodynamic Analysis Report"
+                    description="Comprehensive documentation of the wind tunnel testing, force balance measurements, flow visualization, and aerodynamic performance analysis of the Stingray UAV."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {project.id === "cfd-analysis" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="CFD Analysis Report"
+                    description="Comprehensive documentation of the CFD simulations, including steady-state and transient analysis of NACA 0015 airfoil with high-lift devices using HyperMesh and AcuSolve."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {project.id === "uni3dad" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="Uni-3DAD Research Report"
+                    description="Comprehensive documentation of the unified 3D anomaly detection framework, including GAN inversion methodology, point cloud processing, and benchmark evaluation results."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {project.id === "ekf-lunar-tracking" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="EKF Trans-Lunar Tracking Report"
+                    description="Comprehensive documentation of the Extended Kalman Filter implementation, including coordinate transformations, Jacobian derivations, and spacecraft state estimation results."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {project.id === "horizon-opnav" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="Horizon-Based OpNav Report"
+                    description="Comprehensive documentation of the optical navigation implementation, including camera calibration, limb detection algorithms, and spacecraft position estimation using New Horizons LORRI imagery."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {project.id === "flutter-control" && (
+                <>
+                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                  <PDFViewer
+                    title="Active Flutter Control Report"
+                    description="Comprehensive documentation of the aeroelastic wing section modeling, PI compensator design, frequency-domain analysis, and control system validation for flutter suppression."
+                    pdfUrl={project.reportLink || ''}
+                  />
+                </>
+              )}
+
+              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study", "sfm-project", "stingray-uav", "cfd-analysis", "uni3dad", "ekf-lunar-tracking", "horizon-opnav", "flutter-control"].includes(project.id) && (
                 <p className="text-lg">
                   This is where you'll add your detailed project reports, images, PDFs, or any other content.
                 </p>

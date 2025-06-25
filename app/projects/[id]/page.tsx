@@ -33,7 +33,9 @@ const projects: Project[] = [
 Key Achievements:
 • Developed a pyramid configuration of 4 reaction wheels ensuring three-axis control with redundancy
 • Integrated dual star trackers, IMUs, and a 3-axis magnetometer for robust attitude determination
-• Optimized component selection within a 25 kg ADCS mass budget`,
+• Optimized component selection within a 25 kg ADCS mass budget
+
+Skills: MATLAB, Simulink, PID Control, Risk Management`,
     reportLink: "/reports/Team 1 FDR F24 Final Version (2).pdf",
     slidesLink: "/reports/Team 1 FDR Presentation.pdf",
   },
@@ -52,7 +54,8 @@ Key Achievements:
 • FEM analysis showed a solid factor of safety (7-8)
 • CFD analysis confirmed low drag (0.003 lbf)
 • Achieved modest lift (0.0073 lbf) at 25 fps
-`,
+
+Skills: Solidworks, FEM Analysis, CFD Analysis`,
     reportLink: "/reports/B-2 Aerostructures Project.pdf"
   },
   {
@@ -99,7 +102,9 @@ Key Features:
 
 Key Achievements:
     • Spearheaded the design and modeling of over 40 mechanical parts, including custom noise-reduction fixtures for fluid testing, using SolidWorks and GD&T. Delivered prototypes with exacting tolerances, ensuring the highest levels of precision. 
-    • Implemented Python-based algorithms to improve signal processing efficiency, enabling simultaneous analysis of multiple signals`,
+    • Implemented Python-based algorithms to improve signal processing efficiency, enabling simultaneous analysis of multiple signals
+    
+    Skills: Solidworks, Python, GD&T`,
     reportLink: "/reports/Baker.pdf",
   },
   {
@@ -114,7 +119,9 @@ Key Achievements:
 Key Achievements:
     • Directed a cross-functional team of 8 engineers, optimizing manufacturing processes and commissioning the Nordson Dage 4000plus Bond Pull Tester, reducing setup time by 30%  
     • Developed Python-based automation tools to improve data analysis for die shear tests, contributing to improved sensor and actuator integration, crucial for aerospace assemblies. 
-    • Led the creation of machine-readable formats for RF assemblies, ensuring compliance with aerospace-grade documentation and manufacturing standards, significantly improving part traceability and operational efficiency.`,
+    • Led the creation of machine-readable formats for RF assemblies, ensuring compliance with aerospace-grade documentation and manufacturing standards, significantly improving part traceability and operational efficiency.
+    
+    Skills: RF Assembly programming, Autodesk Inventor, Python`,
     reportLink: "/reports/CAES.pdf",
   },
   {
@@ -129,7 +136,9 @@ Key Achievements:
 Key Achievements:
 • Created a hardware/software pipeline using potentiometers and Arduino
 • Implemented MATLAB-based Finite Element Analysis for data validation
-• Built real-time data visualization and analysis tools`,
+• Built real-time data visualization and analysis tools
+
+Skills: Python, Arduino Programming`,
     reportLink: "/reports/IS2 Final Design Report.pdf",
     posterLink: "/reports/DDA_PosterSession_FinalCopy.pdf"
   },
@@ -144,7 +153,9 @@ Key Features:
 • Performed steady-state and transient simulations using Spalart-Allmaras turbulence model
 • Analyzed flow characteristics at 0° and 12° angles of attack
 • Evaluated performance at velocities of 45 m/s and 90 m/s
-• Concluded that slats help improve aircraft stability at AOA 12° which is optimal for takeoff and landing`,
+• Concluded that slats help improve aircraft stability at AOA 12° which is optimal for takeoff and landing
+
+Skills: Altair Hypermesh`,
     category: "Aerodynamics & CFD Analysis",
     image: "/images/cfd-airfoil-icon.png",
     detailImage: "/images/cfd-airfoil-detail.png",
@@ -170,7 +181,9 @@ Key Features:
 Key Achievements:
 • Developed MATLAB scripts to integrate differential equations of motion via ode45, with and without solar perturbation
 • Transitioned from 3-body to 4-body modeling by introducing the Sun as a dynamic force, calculating real-time solar acceleration using trigonometric orbital positioning
-• Analyzed the orbit deformation after one and fifty orbital periods to study long-term perturbative effects`,
+• Analyzed the orbit deformation after one and fifty orbital periods to study long-term perturbative effects
+
+Skills: MATLAB, Orbital Mechanics`,
     reportLink: "/reports/SFM Project.pdf",
   },
   {
@@ -184,7 +197,9 @@ Key Achievements:
 
 Key Achievements:
 • Conducted force balance testing to compute lift, drag, and pitching moment coefficients for baseline and flapped wing configurations
-• Demonstrated extremely low drag coefficients and no stall behavior across both configurations, validating the aerodynamic efficiency of the Stingray UAV's blended wing-body design`,
+• Demonstrated extremely low drag coefficients and no stall behavior across both configurations, validating the aerodynamic efficiency of the Stingray UAV's blended wing-body design
+
+Skills: MATLAB, Force Balance Testing`,
     reportLink: "/reports/Stingray_UAV.pdf",
   },
   {
@@ -199,7 +214,9 @@ Key Achievements:
 Key Achievements:
 • Performed steady-state and transient simulations using Spalart-Allmaras turbulence model
 • Analyzed flow characteristics at 0° and 12° angles of attack
-• Concluded that slats help improve aircraft stability at AOA 12° which is optimal for takeoff and landing`,
+• Concluded that slats help improve aircraft stability at AOA 12° which is optimal for takeoff and landing
+
+Skills: Altair Hypermesh`,
     reportLink: "/reports/CFD.pdf",
   },
   {
@@ -213,7 +230,9 @@ Key Achievements:
 
 Key Achievements:
 • Leveraged GAN inversion to achieve robust reconstructions of normal objects, enabling precise localization of outliers in corrupted shapes
-• Demonstrated superior performance on benchmark datasets like MVTec3D, outperforming traditional autoencoder-based baselines`,
+• Demonstrated superior performance on benchmark datasets like MVTec3D, outperforming traditional autoencoder-based baselines
+
+Skills: PyTorch, GAN Inversion, 3D Computer Vision`,
     reportLink: "/reports/Uni3DAD.pdf",
   },
   {
@@ -228,7 +247,9 @@ Key Achievements:
 Key Achievements:
 • Designed and implemented a discrete-time EKF using a nonlinear two-body dynamics model with Gaussian white noise acceleration
 • Derived and implemented Jacobians for dynamic propagation and R3B measurement models to form EKF's sensitivity matrix
-• Created a full simulation pipeline in Python using real tracking data to estimate 6D spacecraft state and generate diagnostic plots`,
+• Created a full simulation pipeline in Python using real tracking data to estimate 6D spacecraft state and generate diagnostic plots
+
+Skills: Python, Extended Kalman Filter`,
     reportLink: "/reports/Moon.pdf",
   },
   {
@@ -243,7 +264,9 @@ Key Achievements:
 Key Achievements:
 • Estimated the intrinsic calibration matrix for the LORRI camera using focal length and pixel pitch to compute focal length in pixels
 • Developed a Python pipeline using OpenCV to preprocess the image, detect Pluto's limb, and fit a circular model to the planet's horizon
-• Applied similar-triangle geometry to back-calculate the Z-distance from the pixel radius of Pluto's limb and computed x, y offsets to localize the camera-frame position`,
+• Applied similar-triangle geometry to back-calculate the Z-distance from the pixel radius of Pluto's limb and computed x, y offsets to localize the camera-frame position
+
+Skills: Python, Optimization (linear and nonlinear)`,
     reportLink: "/reports/Pluto.pdf",
   },
   {
@@ -260,7 +283,9 @@ A proportional-integral (PI) compensator was designed to suppress flutter oscill
 Key Achievements:
 • Developed a state-space model of aeroelastic wing behavior using energy-based Lagrangian methods and unsteady aerodynamic theory
 • Derived system transfer functions and designed a PI controller: C(s) = 10 + 100/s
-• Settling time for pitch disturbances reached within 0.5s`,
+• Settling time for pitch disturbances reached within 0.5s
+
+Skills: MATLAB, PI Control, Aeroelasticity`,
     reportLink: "/reports/Flutter.pdf",
   }
 ]

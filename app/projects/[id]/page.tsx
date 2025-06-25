@@ -55,7 +55,7 @@ Key Achievements:
 • CFD analysis confirmed low drag (0.003 lbf)
 • Achieved modest lift (0.0073 lbf) at 25 fps
 
-Skills: Solidworks, FEM Analysis, CFD Analysis`,
+Skills: Solidworks, FEM Analysis, CFD Analysis, 3D Printing`,
     reportLink: "/reports/B-2 Aerostructures Project.pdf"
   },
   {
@@ -104,7 +104,7 @@ Key Achievements:
     • Spearheaded the design and modeling of over 40 mechanical parts, including custom noise-reduction fixtures for fluid testing, using SolidWorks and GD&T. Delivered prototypes with exacting tolerances, ensuring the highest levels of precision. 
     • Implemented Python-based algorithms to improve signal processing efficiency, enabling simultaneous analysis of multiple signals
     
-    Skills: Solidworks, Python, GD&T`,
+    Skills: Solidworks, Python, GD&T, 3D Printing`,
     reportLink: "/reports/Baker.pdf",
   },
   {
@@ -405,7 +405,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                 <>
                   <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
                   <PDFViewer
-                    title="B2 Aerostructures Project Report"
+                    title="B2 Project Report"
                     description="Comprehensive documentation of the B2 Flying Wing project, including design, analysis, and testing results."
                     pdfUrl={project.reportLink || ''}
                   />

@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <div className="ml-auto flex items-center gap-6">
           <Link 
-            href="/reports/Aaryan_Sonawane Resume 2025.pdf" 
+            href="/reports/Aaryan_Sonawane Resume.pdf" 
             className="text-white/70 hover:text-white transition-colors"
             target="_blank"
           >

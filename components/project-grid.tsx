@@ -22,7 +22,7 @@ const projects = [
     description: "Designed and analyzed a B-2 Spirit-inspired flying wing using hybrid Dolphin Fin/Reflexed airfoil. Achieved FEM safety factor of 7-8 and validated aerodynamics through CFD analysis.",
     category: "Aerostructures Analysis",
     image: "/images/jupiter-uav.png",
-    order: 3, // B
+    order: 7, // B
     report: "/reports/B2 Aerostructures Project.pdf"
   },
 
@@ -34,7 +34,7 @@ const projects = [
     description: "Led redesign of the Herriott Cell and CO₂ flow cell assembly for spectroscopy testing systems.",
     category: "Engineering Industry Experience",
     image: "/images/baker-hughes.png",
-    order: 4, // E
+    order: 2, // E
   },
   {
     id: "caes",
@@ -54,7 +54,7 @@ const projects = [
     description: "Created a hardware/software pipeline using potentiometers, Arduino, and MATLAB FEA.",
     category: "Hardware Engineering",
     image: "/images/dda-sensor.png",
-    order: 2, // G
+    order: 6, // G
   },
   {
     id: "sfm-project",
@@ -64,7 +64,7 @@ const projects = [
     description: "Explored solar gravitational perturbations on periodic satellite orbits around Earth-Moon Lagrange points using CR3BP and CR4BP modeling.",
     category: "Orbital Mechanics",
     image: "/images/SFM.png",
-    order: 6, // H
+    order: 11, // H
   },
   {
     id: "stingray-uav",
@@ -74,7 +74,7 @@ const projects = [
     description: "Wind tunnel testing and flow visualization of a blended wing-body Stingray UAV analyzing flap deflection effects on aerodynamic performance.",
     category: "Wind Tunnel Testing",
     image: "/images/Stingray_UAV.png",
-    order: 7, // I
+    order: 12, // I
   },
   {
     id: "cfd-analysis",
@@ -84,7 +84,7 @@ const projects = [
     description: "Computational fluid dynamics study of slat and flap configurations using steady-state and transient simulations in HyperMesh and AcuSolve.",
     category: "CFD Analysis",
     image: "/images/CFD.png",
-    order: 8, // J
+    order: 10, // J
   },
   {
     id: "uni3dad",
@@ -94,7 +94,7 @@ const projects = [
     description: "Unified framework for unsupervised 3D anomaly detection on point cloud data using GAN inversion for end-to-end reconstruction and discrimination.",
     category: "3D Computer Vision",
     image: "/images/Uni3DAD.png",
-    order: 9, // K
+    order: 3, // K
   },
   {
     id: "ekf-lunar-tracking",
@@ -104,7 +104,7 @@ const projects = [
     description: "Extended Kalman Filter implementation for spacecraft trajectory tracking during trans-lunar coast using NASA's Goldstone Deep Space Network measurements.",
     category: "Space Navigation",
     image: "/images/moon.png",
-    order: 10, // L
+    order: 4, // L
   },
   {
     id: "horizon-opnav",
@@ -114,7 +114,7 @@ const projects = [
     description: "Optical navigation implementation using New Horizons LORRI imagery of Pluto, performing camera calibration and spacecraft position estimation from limb detection.",
     category: "Optical Navigation",
     image: "/images/pluto.png",
-    order: 11, // M
+    order: 8, // M
   },
   {
     id: "flutter-control",
@@ -124,7 +124,7 @@ const projects = [
     description: "Modeling and controlling flutter instability in aircraft wing sections using Lagrangian formulation and PI compensator design for aileron deflection control.",
     category: "Aeroelastic Control",
     image: "/images/flutter.png",
-    order: 12, // N
+    order: 9, // N
   },
 ]
 

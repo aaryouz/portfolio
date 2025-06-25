@@ -96,7 +96,7 @@ Key Features:
     color: "bg-gray-800",
     category: "Engineering Industry Experience",
     image: "/images/baker-hughes-cad-model.png",
-    description: `Mechanical Engineering Internship at Baker Hughes, focusing on product development and manufacturing process improvement.
+    description: `During my Mechanical Engineering Internship at Baker Hughes my main focus was on product development and manufacturing process improvement.
 
 Key Achievements:
     • Spearheaded the design and modeling of over 40 mechanical parts, including custom noise-reduction fixtures for fluid testing, using SolidWorks and GD&T. Delivered prototypes with exacting tolerances, ensuring the highest levels of precision. 
@@ -111,7 +111,7 @@ Key Achievements:
     color: "bg-amber-600",
     category: "Engineering Industry Experience",
     image: "/images/caes-lab-workspace.png",
-    description: `Engineering Internship at Cobham Aerospace Electronics Solutions (CAES), working on electronic component design and testing.
+    description: `During my Engineering Internship at Cobham Aerospace Electronics Solutions (CAES) I worked on electronic component design and testing.
 
 Key Achievements:
     • Directed a cross-functional team of 8 engineers, optimizing manufacturing processes and commissioning the Nordson Dage 4000plus Bond Pull Tester, reducing setup time by 30%  
@@ -300,8 +300,9 @@ Key Achievements:
   }
 ]
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === params.id) || projects[0]
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const project = projects.find((p) => p.id === id) || projects[0]
 
   return (
     <div className="min-h-screen bg-black text-white">

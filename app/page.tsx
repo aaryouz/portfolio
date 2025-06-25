@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className="max-w-3xl pt-2">
             <p className="text-gray-400 text-lg font-light tracking-wide">
-              Hi my name is Aaryan Sonawane. I believe in the power of modern technology and use it to maximise my full potential. In the modern world, the cost to acquire knowledge is close to zero. But having knowledge isn't enough, it's how you apply it to solve real world problems is what matters. Technology helps bridge this gap by helping us apply our knowledge into the real world across multiple domains. Helping us become modern renaissance men and I think we should all strive to be one as we head into the digital renaissance.
+              Hi my name is Aaryan Sonawane. I believe in the power of modern technology and use it to maximise my full potential. In the modern world, the cost to acquire knowledge is close to zero. But having knowledge isn't enough, it's how you apply it to solve real world problems is what matters. Technology helps bridge this gap by helping us apply our knowledge into the real world across multiple domains. Helping us become modern renaissance men and I think we should all strive to be one as we head into the digital renaissance. 
             </p>
           </div>
         </div>

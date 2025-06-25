@@ -103,7 +103,7 @@ const projects = [
     color: "bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900",
     description: "Extended Kalman Filter implementation for spacecraft trajectory tracking during trans-lunar coast using NASA's Goldstone Deep Space Network measurements.",
     category: "Space Navigation",
-    image: "/images/moon.png",
+    image: "/images/Moon.png",
     order: 4, // L
   },
   {
@@ -113,7 +113,7 @@ const projects = [
     color: "bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900",
     description: "Optical navigation implementation using New Horizons LORRI imagery of Pluto, performing camera calibration and spacecraft position estimation from limb detection.",
     category: "Optical Navigation",
-    image: "/images/pluto.png",
+    image: "/images/Pluto.png",
     order: 8, // M
   },
   {
@@ -123,7 +123,7 @@ const projects = [
     color: "bg-gradient-to-br from-slate-950 via-red-950 to-slate-900",
     description: "Modeling and controlling flutter instability in aircraft wing sections using Lagrangian formulation and PI compensator design for aileron deflection control.",
     category: "Aeroelastic Control",
-    image: "/images/flutter.png",
+    image: "/images/Flutter.png",
     order: 9, // N
   },
 ]

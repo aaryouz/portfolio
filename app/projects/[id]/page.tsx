@@ -246,7 +246,7 @@ Key Achievements:
     letter: "E",
     color: "bg-gray-800",
     category: "Space Navigation",
-    image: "/images/moon-diagram.png",
+    image: "/images/Moon.png",
     description: `This project involved building an Extended Kalman Filter (EKF) to track a spacecraft's trajectory during its trans-lunar coast using measurements from NASA's Goldstone Deep Space Network. Using noisy range, range-rate, and bearing (R3B) data from the ground station, the filter estimates the spacecraft's position and velocity in the ECI frame.
 
 The EKF fuses a nonlinear dynamic model based on two-body orbital mechanics with real-world measurement updates from a rotating Earth-based antenna, incorporating Earth-centered inertial (ECI), Earth-fixed (ECEF), and East-North-Up (ENU) coordinate transformations.
@@ -257,7 +257,7 @@ Key Achievements:
 • Built accurate transformation pipelines between ECI, ECEF, and ENU frames for proper handling of Goldstone antenna motion and orientation
 • Achieved consistent estimation within ±3σ bounds across all position and velocity components, validating filter tuning and observability assumptions
 • Created a full simulation pipeline in Python using real tracking data to estimate 6D spacecraft state and generate diagnostic plots`,
-    reportLink: "/reports/moon.pdf",
+    reportLink: "/reports/Moon.pdf",
   },
   {
     id: "horizon-opnav",
@@ -265,7 +265,7 @@ Key Achievements:
     letter: "H",
     color: "bg-gray-800",
     category: "Optical Navigation",
-    image: "/images/pluto-diagram.png",
+    image: "/images/Pluto.png",
     description: `This project implemented horizon-based optical navigation (OpNav) using real flight imagery from the New Horizons spacecraft during its flyby of Pluto. Using a single LORRI image, I performed camera calibration and estimated the spacecraft's relative position with respect to Pluto based solely on visual geometry.
 
 Pluto was modeled as a sphere, and the spacecraft position in the camera frame was inferred by fitting a circle to Pluto's limb using the Circle Hough Transform. This method uses the geometry of the image and the known camera intrinsics to reverse-project 2D limb information into a full 3D position estimate.
@@ -276,7 +276,7 @@ Key Achievements:
 • Applied similar-triangle geometry to back-calculate the Z-distance from the pixel radius of Pluto's limb and computed x, y offsets to localize the camera-frame position
 • Achieved spacecraft position estimate relative to Pluto as: x = 45.70 km, y = -291.80 km, Z = 1,422,498.41 km
 • Validated performance using visual overlays and sensitivity to pixel radius accuracy`,
-    reportLink: "/reports/pluto.pdf",
+    reportLink: "/reports/Pluto.pdf",
   },
   {
     id: "flutter-control",
@@ -284,7 +284,7 @@ Key Achievements:
     letter: "A",
     color: "bg-gray-800",
     category: "Aeroelastic Control",
-    image: "/images/flutter-diagram.png",
+    image: "/images/Flutter.png",
     description: `This project involved modeling and controlling flutter instability in an aircraft wing section using a two-degree-of-freedom Lagrangian formulation. The system dynamics were captured as a state-space aeroelastic model with coupled plunge and pitch motion, incorporating structural spring-mass-damper dynamics and unsteady aerodynamic forces via the Theodorsen function.
 
 A proportional-integral (PI) compensator was designed to suppress flutter oscillations by commanding aileron deflections in a closed-loop feedback configuration. The project focused on meeting stability margins, minimizing response times, and ensuring actuator feasibility, with emphasis on robustness and feasibility of implementation.
@@ -296,7 +296,7 @@ Key Achievements:
 • Settling time for pitch disturbances reached within 0.5 seconds, meeting dynamic requirements
 • Verified feasibility by analyzing actuator signal characteristics: Peak aileron deflection = 0.8 rad, Peak rate = 52 rad/s, Control bandwidth ≈ 15 Hz
 • Performed root locus, Bode, and step response simulations to validate compensator performance and system response under saturation constraints`,
-    reportLink: "/reports/flutter.pdf",
+    reportLink: "/reports/Flutter.pdf",
   }
 ]
 

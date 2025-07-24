@@ -220,22 +220,6 @@ Skills: Altair Hypermesh`,
     reportLink: "/reports/CFD.pdf",
   },
   {
-    id: "uni3dad",
-    title: "Uni-3DAD: Unified 3D Anomaly Detection Using GAN Inversion",
-    letter: "U",
-    color: "bg-gray-800",
-    category: "3D Computer Vision",
-    image: "/images/Uni3DAD-diagram.png",
-    description: `Uni-3DAD is a unified framework for unsupervised 3D anomaly detection on point cloud data using GAN inversion. Traditional 3D anomaly detection pipelines either rely on autoencoders or separate steps for reconstruction and discrimination. Our method simplifies this by using a single GAN model capable of both tasks.
-
-Key Achievements:
-• Leveraged GAN inversion to achieve robust reconstructions of normal objects, enabling precise localization of outliers in corrupted shapes
-• Demonstrated superior performance on benchmark datasets like MVTec3D, outperforming traditional autoencoder-based baselines
-
-Skills: PyTorch, GAN Inversion, 3D Computer Vision`,
-    reportLink: "/reports/Uni3DAD.pdf",
-  },
-  {
     id: "ekf-lunar-tracking",
     title: "EKF-Based Trans-Lunar Coast Tracking",
     letter: "E",
@@ -489,17 +473,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                 </>
               )}
 
-              {project.id === "uni3dad" && (
-                <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="Uni-3DAD Research Report"
-                    description="Comprehensive documentation of the unified 3D anomaly detection framework, including GAN inversion methodology, point cloud processing, and benchmark evaluation results."
-                    pdfUrl={project.reportLink || ''}
-                  />
-                </>
-              )}
-
               {project.id === "ekf-lunar-tracking" && (
                 <>
                   <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
@@ -533,7 +506,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                 </>
               )}
 
-              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study", "sfm-project", "stingray-uav", "cfd-analysis", "uni3dad", "ekf-lunar-tracking", "horizon-opnav", "flutter-control"].includes(project.id) && (
+              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study", "sfm-project", "stingray-uav", "cfd-analysis", "ekf-lunar-tracking", "horizon-opnav", "flutter-control"].includes(project.id) && (
                 <p className="text-lg">
                   This is where you'll add your detailed project reports, images, PDFs, or any other content.
                 </p>

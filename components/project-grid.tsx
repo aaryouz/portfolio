@@ -87,16 +87,6 @@ const projects = [
     order: 10, // J
   },
   {
-    id: "uni3dad",
-    title: "Uni-3DAD: Unified 3D Anomaly Detection Using GAN Inversion",
-    letter: "U",
-    color: "bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900",
-    description: "Unified framework for unsupervised 3D anomaly detection on point cloud data using GAN inversion for end-to-end reconstruction and discrimination.",
-    category: "3D Computer Vision",
-    image: "/images/Uni3DAD.png",
-    order: 3, // K
-  },
-  {
     id: "ekf-lunar-tracking",
     title: "EKF-Based Trans-Lunar Coast Tracking",
     letter: "E",

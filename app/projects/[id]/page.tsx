@@ -280,7 +280,7 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
     category: "Machine Shop",
     image: "/images/cannon-art.png",
     detailImage: "/images/cannon-machined.jpg",
-    description: `This precision-crafted miniature cannon was designed and machined at the Rensselaer Polytechnic Institute (RPI) student machine shop. Made entirely from aluminum, the cannon showcases both form and function with a smoothly tapered barrel and a solid carriage mounted on knurled wheels. Every piece was manually turned, milled, and assembled using lathes, mills, and hand tools.`
+    description: `This miniature cannon was designed and machined at the RPI student machine shop. Made entirely from aluminum, the cannon showcases both form and function with a smoothly tapered barrel and a solid carriage mounted on knurled wheels. Every piece was manually turned, milled, and assembled using lathes, mills, and hand tools.`
   }
 ]
 

@@ -297,6 +297,22 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         </Link>
 
         <div className="max-w-3xl mx-auto">
+          {/* Main project image - exclude for cannon-art */}
+          {project.id !== "cannon-art" && (
+            <div className="mb-8 flex justify-center">
+              <div className="relative h-[300px] md:h-[400px] w-full max-w-xl rounded-lg overflow-hidden bg-black/20">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          )}
+          
+          {/* Additional detail image for specific projects */}
           {project.id === "cannon-art" && project.detailImage && (
             <div className="mb-8 flex justify-center">
               <div className="relative h-[300px] md:h-[400px] w-full max-w-xl rounded-lg overflow-hidden bg-black/20">
@@ -310,77 +326,85 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
               </div>
             </div>
           )}
-          <div className="flex items-center gap-3 mb-2">
-            <div className="text-white/70 font-light tracking-wide">{project.category}</div>
-          </div>
           <h1 className="text-5xl md:text-7xl font-light tracking-tighter mb-8">{project.title}</h1>
           <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg border border-white/10">
             <div className="whitespace-pre-line text-lg font-light tracking-wide">{project.description}</div>
           </div>
+          
           {/* Only render documentation/report blocks for projects that are not cannon-art */}
           {project.id !== "cannon-art" && (
             <>
               {project.id === "europa-lander" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <div className="grid grid-cols-1 gap-4 mb-4">
-                    <PDFViewer
-                      title="Final Design Report"
-                      description="Comprehensive documentation of the ECHO Lander mission, including ADCS architecture, component selection, and performance analysis."
-                      pdfUrl={project.reportLink || ''}
-                    />
-                    <PDFViewer
-                      title="FDR Presentation Slides"
-                      description="Presentation slides from the Final Design Review, highlighting key aspects of the mission design and technical solutions."
-                      pdfUrl={project.slidesLink || ''}
-                    />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <div className="grid grid-cols-1 gap-4 mb-4">
+                      <PDFViewer
+                        title="Final Design Report"
+                        description="Comprehensive documentation of the ECHO Lander mission, including ADCS architecture, component selection, and performance analysis."
+                        pdfUrl={project.reportLink || ''}
+                      />
+                      <PDFViewer
+                        title="FDR Presentation Slides"
+                        description="Presentation slides from the Final Design Review, highlighting key aspects of the mission design and technical solutions."
+                        pdfUrl={project.slidesLink || ''}
+                      />
+                    </div>
                   </div>
                 </>
               )}
 
               {project.id === "baker-hughes" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
-                  <PDFViewer
-                    title="Baker Hughes Internship Report"
-                    description="Detailed documentation of my internship experience at Baker Hughes, including projects and achievements."
-                    pdfUrl={project.reportLink || ''}
-                  />
-                </>
-              )}
-
-              {project.id === "caes" && (
-                <>
-                  <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
-                  <PDFViewer
-                    title="CAES Internship Report"
-                    description="Comprehensive documentation of my internship experience at CAES, including project work and technical contributions."
-                    pdfUrl={project.reportLink || ''}
-                  />
-                </>
-              )}
-
-              {project.id === "dda-sensor" && (
-                <>
-                  <h3 className="text-xl font-medium mt-8 mb-4">Project Documentation</h3>
-                  <div className="grid grid-cols-1 gap-4 mb-4">
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
                     <PDFViewer
-                      title="Final Design Report"
-                      description="Comprehensive documentation of the DDA Sensor project, including system architecture, prototyping process, and simulation results."
+                      title="Baker Hughes Internship Report"
+                      description="Detailed documentation of my internship experience at Baker Hughes, including projects and achievements."
                       pdfUrl={project.reportLink || ''}
                     />
                   </div>
                 </>
               )}
 
+              {project.id === "caes" && (
+                <>
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
+                    <PDFViewer
+                      title="CAES Internship Report"
+                      description="Comprehensive documentation of my internship experience at CAES, including project work and technical contributions."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
+                </>
+              )}
+
+              {project.id === "dda-sensor" && (
+                <>
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <div className="grid grid-cols-1 gap-4 mb-4">
+                      <PDFViewer
+                        title="Final Design Report"
+                        description="Comprehensive documentation of the DDA Sensor project, including system architecture, prototyping process, and simulation results."
+                        pdfUrl={project.reportLink || ''}
+                      />
+                    </div>
+                  </div>
+                </>
+              )}
+
               {project.id === "b2-flying-wing" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="B2 Project Report"
-                    description="Comprehensive documentation of the B2 Flying Wing project, including design, analysis, and testing results."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="B2 Project Report"
+                      description="Comprehensive documentation of the B2 Flying Wing project, including design, analysis, and testing results."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
 
@@ -410,7 +434,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         ))}
       </ul>
     </div>
-    <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg border border-white/10">
+    <div className="mt-12 bg-black/20 backdrop-blur-sm p-8 rounded-lg border border-white/10">
       <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
       <div className="grid grid-cols-1 gap-4">
         <PDFViewer
@@ -430,67 +454,79 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
               {project.id === "sfm-project" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="SFM Project Report"
-                    description="Comprehensive documentation of the SFM project, including CR3BP and CR4BP modeling, MATLAB implementation, and orbital analysis results."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="SFM Project Report"
+                      description="Comprehensive documentation of the SFM project, including CR3BP and CR4BP modeling, MATLAB implementation, and orbital analysis results."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
 
               {project.id === "stingray-uav" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="Stingray UAV Aerodynamic Analysis Report"
-                    description="Comprehensive documentation of the wind tunnel testing, force balance measurements, flow visualization, and aerodynamic performance analysis of the Stingray UAV."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="Stingray UAV Aerodynamic Analysis Report"
+                      description="Comprehensive documentation of the wind tunnel testing, force balance measurements, flow visualization, and aerodynamic performance analysis of the Stingray UAV."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
 
               {project.id === "cfd-analysis" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="CFD Analysis Report"
-                    description="Comprehensive documentation of the CFD simulations, including steady-state and transient analysis of NACA 0015 airfoil with high-lift devices using HyperMesh and AcuSolve."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="CFD Analysis Report"
+                      description="Comprehensive documentation of the CFD simulations, including steady-state and transient analysis of NACA 0015 airfoil with high-lift devices using HyperMesh and AcuSolve."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
 
               {project.id === "ekf-lunar-tracking" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="EKF Trans-Lunar Tracking Report"
-                    description="Comprehensive documentation of the Extended Kalman Filter implementation, including coordinate transformations, Jacobian derivations, and spacecraft state estimation results."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="EKF Trans-Lunar Tracking Report"
+                      description="Comprehensive documentation of the Extended Kalman Filter implementation, including coordinate transformations, Jacobian derivations, and spacecraft state estimation results."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
 
               {project.id === "horizon-opnav" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="Horizon-Based OpNav Report"
-                    description="Comprehensive documentation of the optical navigation implementation, including camera calibration, limb detection algorithms, and spacecraft position estimation using New Horizons LORRI imagery."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="Horizon-Based OpNav Report"
+                      description="Comprehensive documentation of the optical navigation implementation, including camera calibration, limb detection algorithms, and spacecraft position estimation using New Horizons LORRI imagery."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
 
               {project.id === "flutter-control" && (
                 <>
-                  <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
-                  <PDFViewer
-                    title="Active Flutter Control Report"
-                    description="Comprehensive documentation of the aeroelastic wing section modeling, PI compensator design, frequency-domain analysis, and control system validation for flutter suppression."
-                    pdfUrl={project.reportLink || ''}
-                  />
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <PDFViewer
+                      title="Active Flutter Control Report"
+                      description="Comprehensive documentation of the aeroelastic wing section modeling, PI compensator design, frequency-domain analysis, and control system validation for flutter suppression."
+                      pdfUrl={project.reportLink || ''}
+                    />
+                  </div>
                 </>
               )}
             </>

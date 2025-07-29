@@ -116,6 +116,16 @@ const projects = [
     image: "/images/Flutter.png",
     order: 9, // N
   },
+  {
+    id: "cannon-art",
+    title: "Precision Machined Miniature Cannon",
+    letter: "C",
+    color: "bg-gradient-to-br from-slate-950 via-yellow-900 to-slate-900",
+    description: "",
+    category: "Machine Shop",
+    image: "/images/cannon-art.png",
+    order: 99, // Placeholder order, adjust as needed
+  },
 ]
 
 export function ProjectGrid() {

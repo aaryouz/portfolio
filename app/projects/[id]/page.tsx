@@ -271,6 +271,16 @@ Key Achievements:
 
 Skills: MATLAB, PI Control, Aeroelasticity`,
     reportLink: "/reports/Flutter.pdf",
+  },
+  {
+    id: "cannon-art",
+    title: "Precision Machined Miniature Cannon",
+    letter: "C",
+    color: "bg-yellow-900",
+    category: "Machine Shop",
+    image: "/images/cannon-art.png",
+    detailImage: "/images/cannon-machined.jpg",
+    description: `This precision-crafted miniature cannon was designed and machined at the Rensselaer Polytechnic Institute (RPI) student machine shop. Made entirely from aluminum, the cannon showcases both form and function with a smoothly tapered barrel and a solid carriage mounted on knurled wheels. Every piece was manually turned, milled, and assembled using lathes, mills, and hand tools.`
   }
 ]
 
@@ -287,51 +297,29 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         </Link>
 
         <div className="max-w-3xl mx-auto">
-          {project.id === "dda-sensor" && (
-            <div className="mb-8 relative h-[700px] rounded-lg overflow-hidden bg-black/20">
-              <div className="absolute inset-0 flex flex-col">
-                <div className="p-8">
-                  <div className="text-white/70 font-light tracking-wide">{project.category}</div>
-                  <h1 className="text-5xl md:text-7xl font-light tracking-tighter">{project.title}</h1>
-                </div>
-                <div className="flex-1 relative p-12">
-                  <Image
-                    src="/images/Screenshot 2025-04-22 205057.png"
-                    alt="DDA Sensor Research Poster"
-                    fill
-                    className="object-contain"
-                    sizes="100vw"
-                  />
-                </div>
+          {project.id === "cannon-art" && project.detailImage && (
+            <div className="mb-8 flex justify-center">
+              <div className="relative h-[300px] md:h-[400px] w-full max-w-xl rounded-lg overflow-hidden bg-black/20">
+                <Image
+                  src={project.detailImage}
+                  alt="Machined Miniature Cannon"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
             </div>
           )}
-          {project.id !== "dda-sensor" && (
-            <>
-              <div className="flex items-center gap-3 mb-2">
-                <div className="text-white/70 font-light tracking-wide">{project.category}</div>
-              </div>
-              <h1 className="text-5xl md:text-7xl font-light tracking-tighter mb-8">{project.title}</h1>
-            </>
-          )}
-
-          {project.image && project.id !== "dda-sensor" && (
-            <div className="mb-8 relative h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden">
-              <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          )}
-
+          <div className="flex items-center gap-3 mb-2">
+            <div className="text-white/70 font-light tracking-wide">{project.category}</div>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-light tracking-tighter mb-8">{project.title}</h1>
           <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg border border-white/10">
             <div className="whitespace-pre-line text-lg font-light tracking-wide">{project.description}</div>
-
-            {/* Project-specific content */}
-            <div className="mt-8 p-4 bg-white/10 rounded-lg">
+          </div>
+          {/* Only render documentation/report blocks for projects that are not cannon-art */}
+          {project.id !== "cannon-art" && (
+            <>
               {project.id === "europa-lander" && (
                 <>
                   <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
@@ -505,14 +493,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                   />
                 </>
               )}
-
-              {!["europa-lander", "baker-hughes", "caes", "dda-sensor", "b2-flying-wing", "cfd-airfoil-study", "sfm-project", "stingray-uav", "cfd-analysis", "ekf-lunar-tracking", "horizon-opnav", "flutter-control"].includes(project.id) && (
-                <p className="text-lg">
-                  This is where you'll add your detailed project reports, images, PDFs, or any other content.
-                </p>
-              )}
-            </div>
-          </div>
+            </>
+          )}
         </div>
       </div>
     </div>

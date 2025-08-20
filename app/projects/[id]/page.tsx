@@ -281,6 +281,23 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
     image: "/images/cannon-art.png",
     detailImage: "/images/cannon-machined.jpg",
     description: `This miniature cannon was designed and machined at the RPI student machine shop. Made entirely from aluminum, the cannon showcases both form and function with a smoothly tapered barrel and a solid carriage mounted on knurled wheels. Every piece was manually turned, milled, and assembled using lathes, mills, and hand tools.`
+  },
+  {
+    id: "fiftyville-mystery",
+    title: "Fiftyville Theft Mystery",
+    letter: "F",
+    color: "bg-gray-800",
+    category: "Data Science",
+    image: "/images/174092-clue-illustration.png",
+    description: `As Detective for the CS50 Fiftyville Mystery, I conducted a comprehensive SQL-based investigation to solve a complex theft case occurring on Humphrey Street
+
+Key Achievements:
+• Analyzed multiple interconnected database tables including witness testimonies, phone records, flight manifests, and security logs
+• Executed complex SQL queries with JOINs, subqueries, and conditional statements to cross-reference evidence
+• Successfully identified the thief, determined their escape destination, and uncovered their accomplice through systematic data analysis
+• Demonstrated logical deduction skills by connecting disparate clues across ATM transactions, bakery security footage, and courthouse records
+
+Skills: SQL, Database Analysis, Logical Reasoning, Problem-Solving, Data Investigation, SQLite`
   }
 ]
 

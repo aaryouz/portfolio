@@ -126,6 +126,16 @@ const projects = [
     image: "/images/cannon-art.png",
     order: 99, // Placeholder order, adjust as needed
   },
+  {
+    id: "fiftyville-mystery",
+    title: "Fiftyville Theft Mystery",
+    letter: "F",
+    color: "bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900",
+    description: "SQL-based detective investigation analyzing witness testimonies, security footage, and financial records to solve a theft mystery.",
+    category: "Data Science",
+    image: "/images/174092-clue-illustration.png",
+    order: 3, // Adjust as needed
+  },
 ]
 
 export function ProjectGrid() {

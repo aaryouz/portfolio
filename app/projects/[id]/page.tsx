@@ -297,9 +297,8 @@ Key Achievements:
 • Successfully identified the thief, determined their escape destination, and uncovered their accomplice through systematic data analysis
 • Demonstrated logical deduction skills by connecting disparate clues across ATM transactions, bakery security footage, and courthouse records
 
-Github Repository: https://github.com/aaryouz/Fiftyville
-
-Skills: SQL, Database Analysis, Logical Reasoning, Problem-Solving, Data Investigation, SQLite`
+Skills: SQL, Database Analysis, Logical Reasoning, Problem-Solving, Data Investigation, SQLite`,
+    reportLink: "https://github.com/aaryouz/Fiftyville"
   }
 ]
 
@@ -545,6 +544,33 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                       description="Comprehensive documentation of the aeroelastic wing section modeling, PI compensator design, frequency-domain analysis, and control system validation for flutter suppression."
                       pdfUrl={project.reportLink || ''}
                     />
+                  </div>
+                </>
+              )}
+
+              {project.id === "fiftyville-mystery" && (
+                <>
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <div className="bg-black/20 backdrop-blur-sm p-6 rounded-lg border border-white/10 cursor-pointer hover:bg-black/30 transition-colors">
+                      <a 
+                        href={project.reportLink || ''} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <h4 className="text-lg font-medium text-white mb-2">GitHub Repository</h4>
+                        <p className="text-white/70 text-sm mb-3">
+                          Complete SQL investigation code, database queries, and detective analysis for solving the Fiftyville theft mystery.
+                        </p>
+                        <div className="flex items-center text-blue-400 text-sm">
+                          <span>View on GitHub</span>
+                          <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </>
               )}

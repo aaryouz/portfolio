@@ -288,7 +288,7 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
     letter: "F",
     color: "bg-gray-800",
     category: "Data Science",
-    image: "/images/174092-clue-illustration.png",
+    image: "/images/Screenshot.png",
     description: `As Detective for the CS50 Fiftyville Mystery, I conducted a comprehensive SQL-based investigation to solve a complex theft case occurring on Humphrey Street
 
 Key Achievements:
@@ -296,6 +296,8 @@ Key Achievements:
 • Executed complex SQL queries with JOINs, subqueries, and conditional statements to cross-reference evidence
 • Successfully identified the thief, determined their escape destination, and uncovered their accomplice through systematic data analysis
 • Demonstrated logical deduction skills by connecting disparate clues across ATM transactions, bakery security footage, and courthouse records
+
+Github Repository: https://github.com/aaryouz/Fiftyville
 
 Skills: SQL, Database Analysis, Logical Reasoning, Problem-Solving, Data Investigation, SQLite`
   }

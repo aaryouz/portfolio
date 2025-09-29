@@ -289,7 +289,7 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
     color: "bg-gray-800",
     category: "Data Science",
     image: "/images/Screenshot.png",
-    description: `As Detective for the CS50 Fiftyville Mystery, I conducted a comprehensive SQL-based investigation to solve a complex theft case occurring on Humphrey Street
+    description: `As Detective for the CS50 Fiftyville Mystery, I conducted a comprehensive SQL-based investigation to solve a theft case occurring on Humphrey Street
 
 Key Achievements:
 • Analyzed multiple interconnected database tables including witness testimonies, phone records, flight manifests, and security logs

@@ -293,11 +293,10 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
 
 Key Achievements:
 • Analyzed multiple interconnected database tables including witness testimonies, phone records, flight manifests, and security logs
-• Executed complex SQL queries with JOINs, subqueries, and conditional statements to cross-reference evidence
+• Executed advanced SQL queries with JOINs, subqueries, and conditional statements to cross-reference evidence
 • Successfully identified the thief, determined their escape destination, and uncovered their accomplice through systematic data analysis
-• Demonstrated logical deduction skills by connecting disparate clues across ATM transactions, bakery security footage, and courthouse records
 
-Skills: SQL, Database Analysis, Logical Reasoning, Problem-Solving, Data Investigation, SQLite`,
+Skills: SQL, Logical Reasoning`,
     reportLink: "https://github.com/aaryouz/Fiftyville"
   }
 ]

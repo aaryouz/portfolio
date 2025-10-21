@@ -12,8 +12,8 @@ export default function Home() {
           <h1 className="text-2xl md:text-4xl font-light tracking-tight">Aaryan's Portfolio</h1>
         </div>
         <div className="ml-auto flex items-center gap-6">
-          <Link 
-            href="/reports/Aaryan_Sonawane Resume.pdf" 
+          <Link
+            href="/api/resume"
             className="text-white/70 hover:text-white transition-colors"
             target="_blank"
           >

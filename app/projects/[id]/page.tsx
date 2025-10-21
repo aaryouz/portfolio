@@ -9,7 +9,6 @@ interface Project {
   title: string;
   letter: string;
   color: string;
-  category: string;
   image: string;
   detailImage?: string;
   description: string;
@@ -26,7 +25,6 @@ const projects: Project[] = [
     title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
     letter: "E",
     color: "bg-gray-800",
-    category: "Space Systems Engineering",
     image: "/images/echo-adcs.png",
     description: `As ADCS Lead for the ECHO Lander Mission, I designed a comprehensive attitude control system for operation on Europa's icy surface
 
@@ -44,7 +42,6 @@ Skills: MATLAB, Simulink, PID Control, Risk Management`,
     title: "B2 Flying Wing Project",
     letter: "B",
     color: "bg-gray-800",
-    category: "Aerostructures Analysis",
     image: "/images/b2-wing-3d-model.png",
     description: `We took on the challenge of designing and analyzing a flying wing aircraft, modeled after the Northrop Grumman B-2 Spirit stealth bomber. The goal was to explore its low-drag potential and structural performance.
 
@@ -63,7 +60,6 @@ Skills: Solidworks, FEM Analysis, CFD Analysis, 3D Printing`,
     title: "Apex Mobility",
     letter: "A",
     color: "bg-emerald-600",
-    category: "Personal Projects",
     image: "/images/apex-mobility.png",
     description: `Developed a personalized daily training tracker for hybrid athletes, focusing on blending disciplines like martial arts, dance, yoga, sprinting, and gymnastics. The application emphasizes structured yet adaptable movement practice through customizable "Training Stones."
 
@@ -79,7 +75,6 @@ Key Features:
     title: "Marinovich Sprint Tester",
     letter: "M",
     color: "bg-purple-700",
-    category: "Personal Projects",
     image: "/images/sprint-tester.png",
     description: `Created a specialized sprint timing application based on the Marinovich methodology for sprint mechanics analysis. The tool focuses on precise timing and hands-free operation during training sessions.
 
@@ -96,7 +91,6 @@ Key Features:
     title: "Baker Hughes Internship",
     letter: "B",
     color: "bg-gray-800",
-    category: "Engineering Industry Experience",
     image: "/images/baker-hughes-cad-model.png",
     description: `During my Mechanical Engineering Internship at Baker Hughes my main focus was on product development and manufacturing process improvement.
 
@@ -112,7 +106,6 @@ Key Achievements:
     title: "CAES Mission Systems",
     letter: "C",
     color: "bg-amber-600",
-    category: "Engineering Industry Experience",
     image: "/images/caes-lab-workspace.png",
     description: `During my Engineering Internship at Cobham Aerospace Electronics Solutions (CAES) I worked on electronic component design and testing.
 
@@ -129,7 +122,6 @@ Key Achievements:
     title: "Deformation Displacement Array (DDA) Sensor",
     letter: "D",
     color: "bg-teal-600",
-    category: "Hardware Engineering",
     image: "/images/dda-sensor.png",
     description: `Developed an innovative sensor system for measuring structural deformation using a combination of hardware and software solutions. The project integrated multiple technologies for accurate displacement tracking.
 
@@ -147,6 +139,7 @@ Skills: Python, Arduino Programming`,
     title: "Slat & Flap Airfoil Study",
     letter: "S",
     color: "bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900",
+    image: "/images/cfd-airfoil-icon.png",
     description: `Conducted an in-depth CFD analysis of a NACA 0015 airfoil with leading-edge slat and trailing-edge flap configurations. The study focused on evaluating aerodynamic performance and flow behavior at various angles of attack and velocities.
 
 Key Features:
@@ -156,8 +149,6 @@ Key Features:
 • Concluded that slats help improve aircraft stability at AOA 12° which is optimal for takeoff and landing
 
 Skills: Altair Hypermesh`,
-    category: "Aerodynamics & CFD Analysis",
-    image: "/images/cfd-airfoil-icon.png",
     detailImage: "/images/cfd-airfoil-detail.png",
     reportLink: "/reports/CFD Project Report.pdf",
     additionalReport: "/reports/CFD Project Report Pt. 2.pdf",
@@ -174,7 +165,6 @@ Skills: Altair Hypermesh`,
     title: "Influence of Solar Accelaration on the Earth Moon CR3BP",
     letter: "S",
     color: "bg-gray-800",
-    category: "Orbital Mechanics",
     image: "/images/SFM-diagram.png",
     description: `This project explores how solar gravitational perturbations impact periodic satellite orbits around Earth-Moon Lagrange points.
 
@@ -191,7 +181,6 @@ Skills: MATLAB, Orbital Mechanics`,
     title: "Aerodynamic Analysis of Stingray UAV with Flap Deflection",
     letter: "A",
     color: "bg-gray-800",
-    category: "Wind Tunnel Testing",
     image: "/images/Stingray_UAV-diagram.png",
     description: `This experiment explored the aerodynamic effects of flaps on a blended wing-body Stingray UAV using wind tunnel testing and flow visualization at Rensselaer Polytechnic Institute.
 
@@ -207,7 +196,6 @@ Skills: MATLAB, Force Balance Testing`,
     title: "CFD Analysis of NACA 0015 Airfoil with High-Lift Devices",
     letter: "C",
     color: "bg-gray-800",
-    category: "CFD Analysis",
     image: "/images/CFD-diagram.png",
     description: `Conducted an in-depth CFD analysis of a NACA 0015 airfoil with leading-edge slat and trailing-edge flap configurations.
 
@@ -224,7 +212,6 @@ Skills: Altair Hypermesh`,
     title: "EKF-Based Trans-Lunar Coast Tracking",
     letter: "E",
     color: "bg-gray-800",
-    category: "Space Navigation",
     image: "/images/Moon-diagram.png",
     description: `This project involved building an Extended Kalman Filter (EKF) to track a spacecraft's trajectory during its trans-lunar coast using measurements from NASA's Goldstone Deep Space Network.
 
@@ -241,7 +228,6 @@ Skills: Python, Extended Kalman Filter`,
     title: "Horizon-Based OpNav with LORRI Imagery",
     letter: "H",
     color: "bg-gray-800",
-    category: "Optical Navigation",
     image: "/images/Pluto-diagram.png",
     description: `This project implemented horizon-based optical navigation (OpNav) using real flight imagery from the New Horizons spacecraft during its flyby of Pluto.
 
@@ -258,7 +244,6 @@ Skills: Python, Optimization (linear and nonlinear)`,
     title: "Active Flutter Control in Aeroelastic Wing Section",
     letter: "A",
     color: "bg-gray-800",
-    category: "Aeroelastic Control",
     image: "/images/Flutter-diagram.png",
     description: `This project involved modeling and controlling flutter instability in an aircraft wing section using a 2 DOF Lagrangian formulation.
 
@@ -277,7 +262,6 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
     title: "Precision Machined Miniature Cannon",
     letter: "C",
     color: "bg-yellow-900",
-    category: "Machine Shop",
     image: "/images/cannon-art.png",
     detailImage: "/images/cannon-machined.jpg",
     description: `This miniature cannon was designed and machined at the RPI student machine shop. Made entirely from aluminum, the cannon showcases both form and function with a smoothly tapered barrel and a solid carriage mounted on knurled wheels. Every piece was manually turned, milled, and assembled using lathes, mills, and hand tools.`
@@ -287,7 +271,6 @@ Skills: MATLAB, PI Control, Aeroelasticity`,
     title: "Fiftyville Theft Mystery",
     letter: "F",
     color: "bg-gray-800",
-    category: "Data Science",
     image: "/images/Screenshot.png",
     description: `As Detective for the CS50 Fiftyville Mystery, I conducted a comprehensive SQL-based investigation to solve a theft case occurring on Humphrey Street
 
@@ -304,7 +287,6 @@ Skills: SQL, Logical Reasoning`,
     title: "YouTube Shorts Transcript Extractor",
     letter: "Y",
     color: "bg-gray-800",
-    category: "Web Development",
     image: "/images/yt-shorts-detail.png",
     description: `I built a full-stack web application for creators to analyze viral YouTube Shorts content through automated transcript extraction and data export.
 

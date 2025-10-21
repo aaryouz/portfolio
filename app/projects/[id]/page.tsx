@@ -306,7 +306,7 @@ Skills: SQL, Logical Reasoning`,
     color: "bg-gray-800",
     category: "Web Development",
     image: "/images/yt-shorts-detail.png",
-    description: `As Lead Developer for the Whop YT Shorts Transcript Extractor, I built a full-stack web application for creators and researchers to analyze viral YouTube Shorts content through automated transcript extraction and data export.
+    description: `I built a full-stack web application for creators to analyze viral YouTube Shorts content through automated transcript extraction and data export.
 
 Key Achievements:
 • Integrated YouTube Data API v3 and a transcript-scraping pipeline to pull top-performing Shorts and their full text in bulk

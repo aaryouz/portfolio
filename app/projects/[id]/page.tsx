@@ -298,6 +298,23 @@ Key Achievements:
 
 Skills: SQL, Logical Reasoning`,
     reportLink: "https://github.com/aaryouz/Fiftyville"
+  },
+  {
+    id: "youtube-shorts-extractor",
+    title: "YouTube Shorts Transcript Extractor",
+    letter: "Y",
+    color: "bg-gray-800",
+    category: "Web Development",
+    image: "/images/yt-shorts-detail.png",
+    description: `As Lead Developer for the Whop YT Shorts Transcript Extractor, I built a full-stack web application for creators and researchers to analyze viral YouTube Shorts content through automated transcript extraction and data export.
+
+Key Achievements:
+• Integrated YouTube Data API v3 and a transcript-scraping pipeline to pull top-performing Shorts and their full text in bulk
+• Engineered server-side data handling in Next.js (App Router) + TypeScript with export to JSON and Excel formats
+• Deployed a responsive front end with Tailwind CSS v4 and Whop's SDK authentication layer for gated access
+
+Skills: Next.js, TypeScript, Tailwind CSS`,
+    reportLink: "https://github.com/aaryouz/whop-yt"
   }
 ]
 
@@ -552,15 +569,42 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                   <div className="mt-12">
                     <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
                     <div className="bg-black/20 backdrop-blur-sm p-6 rounded-lg border border-white/10 cursor-pointer hover:bg-black/30 transition-colors">
-                      <a 
-                        href={project.reportLink || ''} 
-                        target="_blank" 
+                      <a
+                        href={project.reportLink || ''}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="block"
                       >
                         <h4 className="text-lg font-medium text-white mb-2">GitHub Repository</h4>
                         <p className="text-white/70 text-sm mb-3">
                           Complete SQL investigation code, database queries, and detective analysis for solving the Fiftyville theft mystery.
+                        </p>
+                        <div className="flex items-center text-blue-400 text-sm">
+                          <span>View on GitHub</span>
+                          <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </>
+              )}
+
+              {project.id === "youtube-shorts-extractor" && (
+                <>
+                  <div className="mt-12">
+                    <h3 className="text-xl font-medium mb-4">Project Documentation</h3>
+                    <div className="bg-black/20 backdrop-blur-sm p-6 rounded-lg border border-white/10 cursor-pointer hover:bg-black/30 transition-colors">
+                      <a
+                        href={project.reportLink || ''}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <h4 className="text-lg font-medium text-white mb-2">GitHub Repository</h4>
+                        <p className="text-white/70 text-sm mb-3">
+                          Complete source code for the YouTube Shorts Transcript Extractor, including API integration, transcript extraction pipeline, and export functionality.
                         </p>
                         <div className="flex items-center text-blue-400 text-sm">
                           <span>View on GitHub</span>

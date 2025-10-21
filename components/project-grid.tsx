@@ -136,6 +136,16 @@ const projects = [
     image: "/images/174092-clue-illustration.png",
     order: 3, // Adjust as needed
   },
+  {
+    id: "youtube-shorts-extractor",
+    title: "YouTube Shorts Transcript Extractor",
+    letter: "Y",
+    color: "bg-gradient-to-br from-slate-950 via-red-950 to-slate-900",
+    description: "Full-stack web application for creators and researchers to analyze viral YouTube Shorts content through automated transcript extraction and data export.",
+    category: "Web Development",
+    image: "/images/yt-shorts-thumbnail.png",
+    order: 13,
+  },
 ]
 
 export function ProjectGrid() {

@@ -30,8 +30,7 @@ const projects: Project[] = [
 
 Key Achievements:
 • Developed a pyramid configuration of 4 reaction wheels ensuring three-axis control with redundancy
-• Integrated dual star trackers, IMUs, and a 3-axis magnetometer for robust attitude determination
-• Optimized component selection within a 25 kg ADCS mass budget
+• Integrated dual star trackers, IMUs, and a 3-axis magnetometer optimizing within a 25 kg ADCS mass budget
 
 Skills: MATLAB, Simulink, PID Control, Risk Management`,
     reportLink: "/reports/Team 1 FDR F24 Final Version (2).pdf",
@@ -95,26 +94,26 @@ Key Features:
     description: `During my Mechanical Engineering Internship at Baker Hughes my main focus was on product development and manufacturing process improvement.
 
 Key Achievements:
-    • Spearheaded the design and modeling of over 40 mechanical parts, including custom noise-reduction fixtures for fluid testing, using SolidWorks and GD&T. Delivered prototypes with exacting tolerances, ensuring the highest levels of precision. 
-    • Implemented Python-based algorithms to improve signal processing efficiency, enabling simultaneous analysis of multiple signals
+    • Spearheaded the design of over 40 mechanical parts using SolidWorks following standard industry GD&T practices. 
+    • Implemented Python-based algorithms to improve signal processing efficiency
     
-    Skills: Solidworks, Python, GD&T, 3D Printing`,
+    Skills: Solidworks, DFA, DFM, Python, GD&T, 3D Printing`,
     reportLink: "/reports/Baker.pdf",
   },
   {
     id: "caes",
-    title: "CAES Mission Systems",
+    title: "Honeywell Mission Systems",
     letter: "C",
     color: "bg-amber-600",
     image: "/images/caes-lab-workspace.png",
-    description: `During my Engineering Internship at Cobham Aerospace Electronics Solutions (CAES) I worked on electronic component design and testing.
+    description: `Optimized aerospace electronics manufacturing processes through hands-on production floor collaboration, directly improving operational efficiency and reducing bottlenecks across multiple product lines.
 
 Key Achievements:
-    • Directed a cross-functional team of 8 engineers, optimizing manufacturing processes and commissioning the Nordson Dage 4000plus Bond Pull Tester, reducing setup time by 30%  
-    • Developed Python-based automation tools to improve data analysis for die shear tests, contributing to improved sensor and actuator integration, crucial for aerospace assemblies. 
-    • Led the creation of machine-readable formats for RF assemblies, ensuring compliance with aerospace-grade documentation and manufacturing standards, significantly improving part traceability and operational efficiency.
+    • Got the Nordson Dage 4000plus Bond Pull Tester up and running across all product lines, collaborating with Quality and Operations teams to design user-friendly output formats thus reducing setup time by 30% and eliminating manual data entry for production operators  
     
-    Skills: RF Assembly programming, Autodesk Inventor, Python`,
+    • Led the creation of machine-readable UID labels and documentation systems for RF assemblies (APR-39, RFLO, AIM, SEWIP II), ensuring compliance with ISO/IEC 15434 standards and significantly improving part traceability and operational efficiency
+    
+    Skills: Manufacturing Process Optimization, Wire Bonding Programming, Autodesk Inventor, BarTender Designer, RF Assembly, Cross-Functional Collaboration`,
     reportLink: "/reports/CAES.pdf",
   },
   {
@@ -122,15 +121,15 @@ Key Achievements:
     title: "Deformation Displacement Array (DDA) Sensor",
     letter: "D",
     color: "bg-teal-600",
-    image: "/images/dda-sensor.png",
-    description: `Developed an innovative sensor system for measuring structural deformation using a combination of hardware and software solutions. The project integrated multiple technologies for accurate displacement tracking.
+    image: "/images/dda-sensor-project.png",
+    description: `Deformation-Displacement Array (DDA) Sensor - Engineered simulation-driven proof-of-concept for orthopedic scanning technology, combining hardware prototyping with advanced FEA modeling to validate custom orthotic solutions for patients with flat feet
 
 Key Achievements:
-• Created a hardware/software pipeline using potentiometers and Arduino
-• Implemented MATLAB-based Finite Element Analysis for data validation
-• Built real-time data visualization and analysis tools
+• Engineered 16-pin sensor array prototype with Arduino microcontroller, linear potentiometers, and SD card data logging—designed and 3D-printed custom housing with compression springs to capture real-time deformation measurements from physical objects
 
-Skills: Python, Arduino Programming`,
+• Developed Python-based 3D visualization pipeline integrating iPhone LiDAR scanning with deformation data—created side-by-side comparison tools using Trimesh and Plotly to visualize original vs. deformed states with displacement heatmaps
+
+Skills: Finite Element Analysis (FEA), MATLAB Simulation & Visualization, Python (Trimesh, Plotly, Pandas, NumPy), Arduino Programming & Circuit Design, 3D CAD (Autodesk Inventor), Houdini VFX Software`,
     reportLink: "/reports/IS2 Final Design Report.pdf",
     posterLink: "/reports/DDA_PosterSession_FinalCopy.pdf"
   },
@@ -377,19 +376,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                     <PDFViewer
                       title="Baker Hughes Internship Report"
                       description="Detailed documentation of my internship experience at Baker Hughes, including projects and achievements."
-                      pdfUrl={project.reportLink || ''}
-                    />
-                  </div>
-                </>
-              )}
-
-              {project.id === "caes" && (
-                <>
-                  <div className="mt-12">
-                    <h3 className="text-xl font-medium mb-4">Internship Documentation</h3>
-                    <PDFViewer
-                      title="CAES Internship Report"
-                      description="Comprehensive documentation of my internship experience at CAES, including project work and technical contributions."
                       pdfUrl={project.reportLink || ''}
                     />
                   </div>

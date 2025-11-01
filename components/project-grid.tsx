@@ -5,7 +5,7 @@ import Image from "next/image"
 const projects = [
   {
     id: "europa-lander",
-    title: "Europa Habitat and Composition Observation (ECHO) Lander Mission",
+    title: "ECHO Lander Mission",
     letter: "E",
     color: "bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900",
     description:
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: "caes",
-    title: "CAES Mission Systems",
+    title: "Honeywell Mission Systems",
     letter: "C",
     color: "bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900",
     description: "Programmed RF wire bonding patterns and designed custom SMT testing fixtures.",
@@ -121,7 +121,7 @@ const projects = [
     color: "bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900",
     description: "SQL-based detective investigation analyzing witness testimonies, security footage, and financial records to solve a theft mystery.",
     image: "/images/174092-clue-illustration.png",
-    order: 3, // Adjust as needed
+    order: 99, // Adjust as needed
   },
   {
     id: "youtube-shorts-extractor",

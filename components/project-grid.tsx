@@ -144,6 +144,7 @@ export function ProjectGrid() {
     "horizon-opnav",         // Horizon OpNav
     "flutter-control",       // Flutter Control
     "cfd-analysis",          // CFD Analysis
+    "sfm-project",           // SFM Project
     "stingray-uav",          // Stingray UAV
     "cannon-art",            // Cannon Art
     "fiftyville-mystery",    // Fiftyville Mystery

@@ -138,9 +138,25 @@ export function ProjectGrid() {
   // Sort projects by their order property
   const sortedProjects = [...projects].sort((a, b) => a.order - b.order)
 
+  // Hidden project IDs - these won't appear on main page but their detail pages remain accessible
+  const hiddenProjectIds = new Set([
+    "ekf-lunar-tracking",    // EKF Lunar Tracking
+    "horizon-opnav",         // Horizon OpNav
+    "flutter-control",       // Flutter Control
+    "cfd-analysis",          // CFD Analysis
+    "sfm-project",           // SFM Project
+    "stingray-uav",          // Stingray UAV
+    "cannon-art",            // Cannon Art
+    "fiftyville-mystery",    // Fiftyville Mystery
+    "youtube-shorts-extractor" // YouTube Shorts
+  ])
+
+  // Filter out hidden projects for display on main page
+  const visibleProjects = sortedProjects.filter(project => !hiddenProjectIds.has(project.id))
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 p-1">
-      {sortedProjects.map((project) => (
+      {visibleProjects.map((project) => (
         <Link
           key={project.id}
           href={`/projects/${project.id}`}

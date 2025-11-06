@@ -94,7 +94,7 @@ Key Features:
     description: `During my Mechanical Engineering Internship at Baker Hughes my main focus was on product development and manufacturing process improvement.
 
 Key Achievements:
-    • Spearheaded the design of over 40 mechanical parts using SolidWorks following standard industry GD&T practices. 
+    • Reduced assembly time and increased part reusability by redesigning the Herriott Cell fixture. I replaced glued optical mounts with threaded, adjustable components and introduced a new triangular part that improved laser stability and simplified mirror calibration. 
     • Implemented Python-based algorithms to improve signal processing efficiency
     
     Skills: Solidworks, DFA, DFM, Python, GD&T, 3D Printing`,

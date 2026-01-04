@@ -94,6 +94,44 @@ export function SocialIcons() {
           <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
         </svg>
       </SocialIcon>
+
+      <SocialIcon href="https://www.youtube.com/@aaryouz" label="YouTube">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-youtube"
+        >
+          <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+          <path d="m10 15 5-3-5-3z" />
+        </svg>
+      </SocialIcon>
+
+      <SocialIcon href="https://substack.com/@aaryouz" label="Substack">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-substack"
+        >
+          <path d="M4 4h16" />
+          <path d="M4 8h16" />
+          <path d="M4 12h16" />
+          <path d="M4 12v8l8-4 8 4v-8" />
+        </svg>
+      </SocialIcon>
     </div>
   )
 }

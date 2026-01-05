@@ -1,6 +1,5 @@
 import { ProjectGrid } from "@/components/project-grid"
 import { SocialIcons } from "@/components/social-icons"
-import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Home() {
@@ -12,13 +11,6 @@ export default function Home() {
           <h1 className="text-2xl md:text-4xl font-light tracking-tight">Aaryan's Portfolio</h1>
         </div>
         <div className="ml-auto flex items-center gap-6">
-          <Link
-            href="/api/resume"
-            className="text-white/70 hover:text-white transition-colors"
-            target="_blank"
-          >
-            Resume
-          </Link>
           <SocialIcons />
         </div>
       </header>
